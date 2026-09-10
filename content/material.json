@@ -1,0 +1,16 @@
+{
+  "_comment": "Erlaubte Materialschlüssel. count ist die Stückzahl.",
+  "material": [
+    { "key": "baelle",              "label": "Bälle" },
+    { "key": "huetchen",            "label": "Hütchen" },
+    { "key": "markierungsteller",   "label": "Markierungsteller" },
+    { "key": "leibchen",            "label": "Leibchen" },
+    { "key": "minitore",            "label": "Minitore" },
+    { "key": "grosstor",            "label": "Großes Tor" },
+    { "key": "stangen",             "label": "Stangen" },
+    { "key": "huerden",             "label": "Hürden" },
+    { "key": "koordinationsleiter", "label": "Koordinationsleiter" },
+    { "key": "dummies",             "label": "Freistoß-Dummies" },
+    { "key": "reifen",              "label": "Reifen" }
+  ]
+}

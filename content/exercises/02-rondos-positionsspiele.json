@@ -1,0 +1,375 @@
+[
+  {
+    "slug": "rondo-5v2",
+    "name": "Rondo 5 gegen 2",
+    "goal_primary": "pressingresistenz",
+    "goals_secondary": ["aktivierung", "technik"],
+    "players_min": 7,
+    "players_max": 16,
+    "duration_min": 10,
+    "duration_max": 15,
+    "intensity": 3,
+    "field_width_m": 12,
+    "field_length_m": 12,
+    "material": [
+      { "item": "huetchen", "count": 4 },
+      { "item": "baelle", "count": 4 },
+      { "item": "leibchen", "count": 4 }
+    ],
+    "description": "Das Standardrondo: fünf Außenspieler halten den Ball gegen zwei Verteidiger. Trainiert Passschärfe, Vororientierung und das Spiel durch die Mitte unter Druck.",
+    "procedure": "Quadrat 12 x 12 m. Fünf Spieler außen (vier Ecken plus einer variabel an einer Seite), zwei Verteidiger innen. Außen maximal zwei Kontakte. Ein Pass durch die beiden Verteidiger hindurch zählt als Punkt. Die Verteidiger bleiben drin, bis sie den Ball erobern oder ins Aus lenken; der Verursacher geht mit dem länger drinstehenden Verteidiger tauschen. Zwei Gruppen parallel.",
+    "coaching_points": [
+      "Offene Stellung mit dem Rücken zur Außenlinie, beide Nachbarn im Blick",
+      "Pass durch die Mitte suchen, sobald die Verteidiger nebeneinander stehen",
+      "Der freie fünfte Spieler verschiebt sich immer auf die Ballseite und bildet das Dreieck",
+      "Verteidiger arbeiten als Paar: einer presst, einer deckt den Pass durch die Mitte"
+    ],
+    "variations": {
+      "easier": ["Größeres Feld 15 x 15 m", "Drei Kontakte"],
+      "harder": ["Ein Kontakt", "6v2 mit zwei Bällen", "Verteidiger dürfen den Ball nach Eroberung 5 Sekunden halten, die Außenspieler müssen gegenpressen"]
+    },
+    "tags": ["rondo", "pressingresistenz", "passspiel", "unterzahl", "vororientierung"],
+    "animation": {
+      "version": 1,
+      "pitch": { "width_m": 12, "length_m": 12, "markings": "none" },
+      "tokens": [
+        { "id": "a1", "kind": "player", "team": "own", "label": "" },
+        { "id": "a2", "kind": "player", "team": "own", "label": "" },
+        { "id": "a3", "kind": "player", "team": "own", "label": "" },
+        { "id": "a4", "kind": "player", "team": "own", "label": "" },
+        { "id": "a5", "kind": "player", "team": "own", "label": "" },
+        { "id": "b1", "kind": "player", "team": "opp", "label": "" },
+        { "id": "b2", "kind": "player", "team": "opp", "label": "" }
+      ],
+      "keyframes": [
+        { "t": 0, "positions": { "a1": [1, 1], "a2": [11, 1], "a3": [11, 11], "a4": [1, 11], "a5": [6, 0.5], "b1": [4, 4], "b2": [7, 7] }, "ball": { "holder": "a1" } },
+        { "t": 1.2, "positions": { "b1": [4.5, 2], "b2": [6, 5], "a5": [6, 0.5] }, "ball": { "holder": "a5" }, "transition": { "pass": ["a1", "a5"] } },
+        { "t": 2.4, "positions": { "b1": [7, 2.5], "b2": [8, 5.5] }, "ball": { "holder": "a2" }, "transition": { "pass": ["a5", "a2"] } },
+        { "t": 3.8, "positions": { "b1": [8, 5], "b2": [9, 8], "a5": [11.5, 6] }, "ball": { "holder": "a5" }, "transition": { "pass": ["a2", "a5"], "runs": [["a5", "straight"]] } },
+        { "t": 5.2, "positions": { "b1": [6, 6], "b2": [7, 8] }, "ball": { "holder": "a4" }, "transition": { "pass": ["a5", "a4"] } }
+      ],
+      "loop": true
+    },
+    "source": "seed"
+  },
+  {
+    "slug": "rondo-6v2-dritter-mann",
+    "name": "Rondo 6 gegen 2 mit Dritter-Mann-Regel",
+    "goal_primary": "pressingresistenz",
+    "goals_secondary": ["spielaufbau", "positionsspiel"],
+    "players_min": 8,
+    "players_max": 16,
+    "duration_min": 10,
+    "duration_max": 15,
+    "intensity": 3,
+    "field_width_m": 14,
+    "field_length_m": 14,
+    "material": [
+      { "item": "huetchen", "count": 4 },
+      { "item": "baelle", "count": 4 },
+      { "item": "leibchen", "count": 4 }
+    ],
+    "description": "Rondo mit sechs Außenspielern, bei dem nur der Pass über den dritten Mann als Punkt zählt. Schult das Klatschen-lassen und Weiterleiten aus dem Spielaufbau.",
+    "procedure": "Feld 14 x 14 m, sechs Außenspieler, zwei Verteidiger innen. Zwei Kontakte außen. Punkt gibt es nur, wenn ein Pass mit einem Kontakt zurückgelegt und vom dritten Spieler direkt weitergespielt wird (A → B klatscht → A spielt auf C oder B spielt direkt auf C). Verteidiger wechseln nach Ballgewinn mit dem Verursacher.",
+    "coaching_points": [
+      "Der Klatschende steht seitlich offen, nicht frontal zum Ball",
+      "Der dritte Mann bietet sich in den freien Raum hinter den Verteidigern an",
+      "Passtempo hoch halten, sonst schließen die Verteidiger den Weg",
+      "Nach dem Klatschen sofort neu anbieten"
+    ],
+    "variations": {
+      "easier": ["Jeder Pass zählt, Dritter-Mann-Pass zählt doppelt", "Größeres Feld"],
+      "harder": ["Ein Kontakt für alle", "Drei Verteidiger", "Nur Diagonalpässe erlaubt"]
+    },
+    "tags": ["rondo", "pressingresistenz", "dritter_mann", "passspiel", "unterzahl", "vororientierung"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "rondo-4v2-zwei-zonen",
+    "name": "Rondo 4+2 gegen 2 in zwei Zonen",
+    "goal_primary": "pressingresistenz",
+    "goals_secondary": ["spielaufbau", "positionsspiel"],
+    "players_min": 8,
+    "players_max": 16,
+    "duration_min": 10,
+    "duration_max": 15,
+    "intensity": 4,
+    "field_width_m": 12,
+    "field_length_m": 24,
+    "material": [
+      { "item": "huetchen", "count": 6 },
+      { "item": "baelle", "count": 4 },
+      { "item": "leibchen", "count": 8 }
+    ],
+    "description": "Zwei Rondofelder nebeneinander. Vier Spieler halten mit Hilfe von zwei Verteidigern der Gegenseite den Ball, nach einer Pass-Anzahl wird ins andere Feld verlagert. Trainiert das Herausspielen aus dem Druck und die Verlagerung.",
+    "procedure": "Zwei Felder 12 x 12 m nebeneinander. In Feld A vier Ballbesitzer gegen zwei Verteidiger, in Feld B warten vier Spieler des anderen Teams plus zwei ruhende Verteidiger. Nach fünf Pässen darf Feld A den Ball ins Feld B verlagern (Pass über die Zonengrenze). Die beiden Verteidiger aus A sprinten in Feld B nach und pressen dort. Team B braucht wieder fünf Pässe.",
+    "coaching_points": [
+      "Verlagerung vorbereiten: ein Spieler steht schon am Rand zur anderen Zone",
+      "Der Pass in die andere Zone muss scharf sein, die Verteidiger sind schnell da",
+      "Verteidiger: gemeinsam pressen, den Verlagerungspass zustellen",
+      "Nach der Verlagerung sofort Dreiecke im neuen Feld"
+    ],
+    "variations": {
+      "easier": ["Drei Pässe vor der Verlagerung", "Größere Felder"],
+      "harder": ["Zwei Kontakte", "Verteidiger dürfen schon nach drei Pässen antizipieren und die Verlagerung blocken", "Verlagerung nur per Flugball"]
+    },
+    "tags": ["rondo", "positionsspiel", "pressingresistenz", "unterzahl", "verschieben", "ueberzahl"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "positionsspiel-4v4-plus-3",
+    "name": "Positionsspiel 4 gegen 4 plus 3 Neutrale",
+    "goal_primary": "positionsspiel",
+    "goals_secondary": ["pressingresistenz", "spielaufbau"],
+    "players_min": 11,
+    "players_max": 11,
+    "duration_min": 15,
+    "duration_max": 20,
+    "intensity": 4,
+    "field_width_m": 25,
+    "field_length_m": 30,
+    "material": [
+      { "item": "huetchen", "count": 4 },
+      { "item": "baelle", "count": 6 },
+      { "item": "leibchen", "count": 11 }
+    ],
+    "description": "Zwei Teams in Gleichzahl, drei Neutrale spielen immer mit dem ballbesitzenden Team. Die zentrale Form für Überzahlspiel, Dreiecksbildung und Gegenpressing nach Ballverlust.",
+    "procedure": "Feld 25 x 30 m. Vier gegen vier innen, ein Neutraler in der Mitte, zwei Neutrale an den Stirnseiten außerhalb des Feldes. Neutrale spielen mit dem ballbesitzenden Team, maximal zwei Kontakte. Punkt: zehn Pässe in Folge oder ein Pass von einem Stirnseiten-Neutralen zum anderen durch das Feld. Nach Ballgewinn spielt das andere Team sofort weiter.",
+    "coaching_points": [
+      "Breite und Tiefe: die Innenspieler besetzen die vier Ecken des Feldes gedanklich",
+      "Der zentrale Neutrale zeigt sich immer zwischen den Linien des Gegners",
+      "Nach Ballverlust sofortiges Gegenpressing, der ballnächste Spieler geht drauf",
+      "Vororientierung: vor der Annahme wissen, wo der Neutrale steht"
+    ],
+    "variations": {
+      "easier": ["Sechs Pässe für einen Punkt", "Drei Kontakte"],
+      "harder": ["Ein Kontakt für Neutrale", "Nur ein Neutraler", "Nach Ballverlust darf innerhalb von 5 Sekunden zurückerobert werden, dann zählt der Punkt sofort"]
+    },
+    "tags": ["positionsspiel", "ueberzahl", "neutrale", "pressingresistenz", "gegenpressing", "ballbesitz"],
+    "animation": {
+      "version": 1,
+      "pitch": { "width_m": 25, "length_m": 30, "markings": "none" },
+      "tokens": [
+        { "id": "a1", "kind": "player", "team": "own", "label": "" },
+        { "id": "a2", "kind": "player", "team": "own", "label": "" },
+        { "id": "a3", "kind": "player", "team": "own", "label": "" },
+        { "id": "a4", "kind": "player", "team": "own", "label": "" },
+        { "id": "b1", "kind": "player", "team": "opp", "label": "" },
+        { "id": "b2", "kind": "player", "team": "opp", "label": "" },
+        { "id": "b3", "kind": "player", "team": "opp", "label": "" },
+        { "id": "b4", "kind": "player", "team": "opp", "label": "" },
+        { "id": "n1", "kind": "neutral", "label": "N" },
+        { "id": "n2", "kind": "neutral", "label": "N" },
+        { "id": "n3", "kind": "neutral", "label": "N" }
+      ],
+      "keyframes": [
+        { "t": 0, "positions": { "n2": [12.5, -1], "n3": [12.5, 31], "n1": [12.5, 15], "a1": [4, 6], "a2": [21, 6], "a3": [4, 24], "a4": [21, 24], "b1": [9, 9], "b2": [16, 9], "b3": [9, 20], "b4": [16, 20] }, "ball": { "holder": "n2" } },
+        { "t": 1.5, "positions": { "b1": [6, 7], "b2": [13, 8] }, "ball": { "holder": "a1" }, "transition": { "pass": ["n2", "a1"] } },
+        { "t": 3.0, "positions": { "b1": [9, 12], "b2": [14, 13], "n1": [11, 16] }, "ball": { "holder": "n1" }, "transition": { "pass": ["a1", "n1"] } },
+        { "t": 4.5, "positions": { "b3": [8, 22], "a4": [20, 26] }, "ball": { "holder": "a4" }, "transition": { "pass": ["n1", "a4"] } },
+        { "t": 6.0, "positions": { "b4": [17, 25] }, "ball": { "holder": "n3" }, "transition": { "pass": ["a4", "n3"] } }
+      ],
+      "loop": true
+    },
+    "source": "seed"
+  },
+  {
+    "slug": "positionsspiel-5v5-plus-2",
+    "name": "Positionsspiel 5 gegen 5 plus 2 Neutrale",
+    "goal_primary": "positionsspiel",
+    "goals_secondary": ["pressingresistenz", "kompaktheit"],
+    "players_min": 12,
+    "players_max": 12,
+    "duration_min": 15,
+    "duration_max": 20,
+    "intensity": 4,
+    "field_width_m": 30,
+    "field_length_m": 35,
+    "material": [
+      { "item": "huetchen", "count": 4 },
+      { "item": "baelle", "count": 6 },
+      { "item": "leibchen", "count": 12 }
+    ],
+    "description": "Ballbesitzspiel in Gleichzahl mit zwei Neutralen im Feld. Etwas näher am Spiel als 4v4+3, weil die Überzahl kleiner ist und das verteidigende Team kompakt bleiben kann.",
+    "procedure": "Feld 30 x 35 m, fünf gegen fünf plus zwei Neutrale im Feld. Punkt: acht Pässe in Folge. Zweiter Punkt möglich, wenn nach acht Pässen ein Spieler den Ball über eine Stirnlinie dribbelt. Das verteidigende Team punktet, wenn es nach Ballgewinn fünf Pässe in Folge spielt.",
+    "coaching_points": [
+      "Ballbesitz: Spielfeld groß machen, Neutrale zwischen den Linien",
+      "Verteidigen: Feld klein machen, Abstände unter 8 m, ballfernen Raum aufgeben",
+      "Nach Ballgewinn erst sichern (zwei Pässe), dann tempo",
+      "Der Ballführende soll immer drei Optionen haben: links, rechts, hinten"
+    ],
+    "variations": {
+      "easier": ["Größeres Feld", "Sechs Pässe"],
+      "harder": ["Zwei Kontakte", "Ein Neutraler", "Nur Pässe nach vorn zählen"]
+    },
+    "tags": ["positionsspiel", "neutrale", "ballbesitz", "kompaktheit", "pressingresistenz", "gleichzahl"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "positionsspiel-drei-zonen-durchspielen",
+    "name": "Positionsspiel über drei Zonen",
+    "goal_primary": "spielaufbau",
+    "goals_secondary": ["positionsspiel", "pressingresistenz"],
+    "players_min": 12,
+    "players_max": 16,
+    "duration_min": 15,
+    "duration_max": 25,
+    "intensity": 4,
+    "field_width_m": 30,
+    "field_length_m": 45,
+    "material": [
+      { "item": "huetchen", "count": 8 },
+      { "item": "baelle", "count": 6 },
+      { "item": "leibchen", "count": 14 }
+    ],
+    "description": "Drei Zonen hintereinander. Das ballbesitzende Team muss den Ball aus der ersten durch die mittlere in die dritte Zone spielen. Bildet den Weg vom Aufbau ins letzte Drittel ab.",
+    "procedure": "Feld 30 x 45 m in drei Zonen zu 15 m Länge. Team A: vier Spieler in Zone 1, zwei in Zone 2, zwei in Zone 3 (bei 14 Spielern). Team B spiegelbildlich. Team A startet in Zone 1 mit vier gegen zwei Pressende von B. Ziel: Pass in Zone 2 (dort zwei gegen zwei plus nachrückender Spieler), dann Pass in Zone 3. Kommt der Ball in Zone 3 an und wird kontrolliert, gibt es einen Punkt. Bei Ballverlust spielt Team B in die Gegenrichtung.",
+    "coaching_points": [
+      "Zone 1: Geduld, den Gegner mit Quer- und Rückpässen ziehen, dann steil",
+      "Zone 2: Anspiel in den Fuß, Ablage auf den Nachrücker (dritter Mann)",
+      "Nach dem Pass in die nächste Zone rückt ein Spieler nach, sodass Überzahl entsteht",
+      "Pressende Spieler: Passwege in die nächste Zone zustellen, nicht nur zum Ball laufen"
+    ],
+    "variations": {
+      "easier": ["Ein Pressender in Zone 1", "Zone 2 darf mit Dribbling überwunden werden"],
+      "harder": ["Zwei Kontakte in Zone 2", "Zone 2 muss mit maximal zwei Pässen durchspielt werden", "Zone 3 endet mit Abschluss auf ein Großtor mit Torwart"]
+    },
+    "tags": ["positionsspiel", "spielaufbau", "pressingresistenz", "dritter_mann", "ueberzahl"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "doppelrondo-mit-verlagerung",
+    "name": "Doppelrondo mit Verlagerung",
+    "goal_primary": "pressingresistenz",
+    "goals_secondary": ["umschalten_defensiv", "positionsspiel"],
+    "players_min": 12,
+    "players_max": 16,
+    "duration_min": 12,
+    "duration_max": 18,
+    "intensity": 4,
+    "field_width_m": 30,
+    "field_length_m": 12,
+    "material": [
+      { "item": "huetchen", "count": 8 },
+      { "item": "baelle", "count": 4 },
+      { "item": "leibchen", "count": 8 }
+    ],
+    "description": "Zwei Rondos mit 8 m Abstand. Nach einer Pass-Anzahl verlagert die Gruppe zum anderen Rondo, die Verteidiger müssen nachsetzen. Trainiert den langen Pass unter Druck und das Umschalten der Verteidiger.",
+    "procedure": "Zwei Quadrate 10 x 10 m mit 8 m Abstand. In jedem Quadrat vier Außenspieler. Zwei Verteidiger starten im ersten Quadrat. Nach vier Pässen darf zum anderen Rondo verlagert werden. Die zwei Verteidiger sprinten hinüber. Wird der Ball erobert oder die Verlagerung abgefangen, tauschen Verursacher und Verteidiger. Zählen: jede geglückte Verlagerung ist ein Punkt für die Außenspieler.",
+    "coaching_points": [
+      "Vor der Verlagerung den Blick heben, der Pass muss vor dem Verteidiger ankommen",
+      "Verlagerung mit dem passenden Fuß, nicht um die Verteidiger herumlegen",
+      "Verteidiger: einer läuft direkt, der andere versucht den Verlagerungspass abzufangen",
+      "Empfänger im zweiten Rondo bereitet sich vor: in offener Stellung, bereit zum ersten Kontakt"
+    ],
+    "variations": {
+      "easier": ["Drei Pässe vor Verlagerung", "Verteidiger müssen ein Hütchen umlaufen"],
+      "harder": ["Verlagerung nur mit einem Kontakt", "Drei Verteidiger", "Nach der Verlagerung müssen sofort zwei Pässe folgen, bevor der Punkt zählt"]
+    },
+    "tags": ["rondo", "pressingresistenz", "verschieben", "umschalten_defensiv", "unterzahl", "passspiel"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "positionsspiel-4v4-plus-2-endzonen",
+    "name": "Positionsspiel 4 gegen 4 plus 2 auf Endzonen",
+    "goal_primary": "positionsspiel",
+    "goals_secondary": ["tiefenlaeufe", "entscheidungsverhalten"],
+    "players_min": 10,
+    "players_max": 12,
+    "duration_min": 15,
+    "duration_max": 20,
+    "intensity": 4,
+    "field_width_m": 25,
+    "field_length_m": 35,
+    "material": [
+      { "item": "huetchen", "count": 8 },
+      { "item": "baelle", "count": 6 },
+      { "item": "leibchen", "count": 10 }
+    ],
+    "description": "Ballbesitzspiel mit Richtung: Punkt durch Dribbling oder Pass in die gegnerische Endzone. Verbindet Positionsspiel mit dem Spiel in die Tiefe.",
+    "procedure": "Feld 25 x 35 m mit 5 m tiefen Endzonen an beiden Stirnseiten. Vier gegen vier plus zwei Neutrale im Feld. Punkt, wenn ein Spieler den Ball kontrolliert in die gegnerische Endzone dribbelt oder ein Mitspieler dort einen Pass annimmt. Der Lauf in die Endzone darf erst starten, wenn der Ball unterwegs ist (kein Warten in der Zone).",
+    "coaching_points": [
+      "Tiefe suchen, bevor die Breite bespielt wird: erst schauen, ob der Steckpass geht",
+      "Läufe in die Endzone mit Timing, nicht zu früh",
+      "Nach dem Pass in die Tiefe nachrücken, damit der Ball gesichert werden kann",
+      "Verteidiger: die Endzone mit dem Körper verschließen, nicht dem Ball hinterherlaufen"
+    ],
+    "variations": {
+      "easier": ["Endzone darf vorher besetzt werden", "Größere Endzonen"],
+      "harder": ["Zwei Kontakte", "Punkt nur nach Pass, nicht nach Dribbling", "Nach Punkt sofort weiter in die andere Richtung, kein Neustart"]
+    },
+    "tags": ["positionsspiel", "spielform_klein", "neutrale", "tiefenlaeufe", "entscheidungsverhalten", "ueberzahl"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "positionsspiel-7v7-plus-3-in-formation",
+    "name": "Positionsspiel 7 gegen 7 plus 3 in Formation",
+    "goal_primary": "positionsspiel",
+    "goals_secondary": ["spielaufbau", "kompaktheit"],
+    "players_min": 17,
+    "players_max": 17,
+    "duration_min": 20,
+    "duration_max": 25,
+    "intensity": 4,
+    "field_width_m": 45,
+    "field_length_m": 50,
+    "material": [
+      { "item": "huetchen", "count": 4 },
+      { "item": "baelle", "count": 8 },
+      { "item": "leibchen", "count": 17 }
+    ],
+    "description": "Großes Positionsspiel, in dem beide Teams in ihrer Grundformation stehen. Die drei Neutralen besetzen Sechser-Position und die Außen. Übertrag des Positionsspiels auf die echte Struktur.",
+    "procedure": "Feld 45 x 50 m. Zwei Teams zu sieben in 2-3-2 oder 3-3-1, drei Neutrale: einer im Zentrum, je einer an den Außenlinien. Ballbesitzteam versucht 12 Pässe in Folge, dabei muss mindestens ein Pass über einen Außen-Neutralen gehen. Verteidigendes Team punktet mit fünf Pässen nach Ballgewinn oder mit einem Dribbling über die Stirnlinie des Gegners.",
+    "coaching_points": [
+      "Positionen halten, Räume statt Ball anlaufen",
+      "Seitenwechsel über den Sechser, wenn eine Seite zu ist",
+      "Verteidigen im Block: ballnah eng, ballfern einrücken",
+      "Neutrale: mit einem Kontakt Tempo ins Spiel bringen"
+    ],
+    "variations": {
+      "easier": ["Zehn Pässe", "Vier Neutrale"],
+      "harder": ["Zwei Kontakte", "Pässe zählen nur, wenn sie nach vorn gehen oder die Seite wechseln", "Ballbesitzteam darf nach 12 Pässen auf ein Großtor abschließen"]
+    },
+    "tags": ["positionsspiel", "spielform_gross", "neutrale", "spielaufbau", "kompaktheit", "ballbesitz"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "rondo-3v1-schnellrondo",
+    "name": "Schnellrondo 3 gegen 1",
+    "goal_primary": "technik",
+    "goals_secondary": ["pressingresistenz"],
+    "players_min": 4,
+    "players_max": 20,
+    "duration_min": 6,
+    "duration_max": 10,
+    "intensity": 4,
+    "field_width_m": 6,
+    "field_length_m": 6,
+    "material": [
+      { "item": "huetchen", "count": 4 },
+      { "item": "baelle", "count": 5 },
+      { "item": "leibchen", "count": 5 }
+    ],
+    "description": "Rondo auf engstem Raum mit einem Kontakt. Maximale Passfrequenz, sofortiges Bestrafen von Fehlern. Für Passschärfe und schnelle Entscheidungen.",
+    "procedure": "Quadrate mit 6 m Seitenlänge, drei Außenspieler, ein Verteidiger. Ein Kontakt außen. Wer den Ball verliert oder zwei Kontakte braucht, geht in die Mitte. Wechsel nach 90 Sekunden Rotation, damit niemand zu lange in der Mitte hängt.",
+    "coaching_points": [
+      "Pass mit der Innenseite, scharf, auf den Fuß des Mitspielers",
+      "Nach dem Pass sofort neue Position, damit zwei Anspielstationen bleiben",
+      "Körperstellung vor der Annahme entscheidet über die nächste Option"
+    ],
+    "variations": {
+      "easier": ["Zwei Kontakte", "Feld 8 x 8 m"],
+      "harder": ["Nur schwacher Fuß", "4v2 im gleichen Feld", "Verteidiger darf nach Ballgewinn auf ein Minitor außerhalb abschließen"]
+    },
+    "tags": ["rondo", "technik", "passspiel", "unterzahl", "pressingresistenz"],
+    "animation": null,
+    "source": "seed"
+  }
+]

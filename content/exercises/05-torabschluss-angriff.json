@@ -1,0 +1,381 @@
+[
+  {
+    "slug": "torabschluss-nach-doppelpass-mit-sechser",
+    "name": "Torabschluss nach Doppelpass mit dem Sechser",
+    "goal_primary": "torabschluss",
+    "goals_secondary": ["technik", "tiefenlaeufe"],
+    "players_min": 8,
+    "players_max": 14,
+    "duration_min": 12,
+    "duration_max": 18,
+    "intensity": 3,
+    "field_width_m": 40,
+    "field_length_m": 35,
+    "material": [
+      { "item": "huetchen", "count": 6 },
+      { "item": "baelle", "count": 12 },
+      { "item": "grosstor", "count": 1 }
+    ],
+    "description": "Der Achter spielt in den Sechser, startet hinter die gedachte Kette und bekommt den Ball zurück in den Lauf. Abschluss aus 16 bis 20 Metern oder nach Mitnahme in den Strafraum.",
+    "procedure": "Halbfeld mit Großtor und Torwart. Sechser-Hütchen zentral 30 m vor dem Tor, zwei Achter-Hütchen 8 m links und rechts davon, 5 m weiter hinten. Der Achter spielt in den Sechser, startet sofort diagonal in Richtung Strafraum. Der Sechser lässt mit einem Kontakt in den Lauf klatschen. Der Achter schließt direkt ab oder nimmt einmal mit. Seite abwechseln, alle rotieren durch die Positionen.",
+    "coaching_points": [
+      "Der Steckpass in den Lauf, nicht auf den Fuß: der Achter darf nicht abbremsen müssen",
+      "Abschluss mit dem ersten Kontakt oder nach einer Mitnahme, nie drei Kontakte",
+      "Schuss flach und platziert, die lange Ecke ist die Regel",
+      "Nach dem Abschluss: Nachsetzen auf den Abpraller"
+    ],
+    "variations": {
+      "easier": ["Sechser spielt mit zwei Kontakten", "Abschluss nach Mitnahme erlaubt, kein Direktschuss nötig"],
+      "harder": ["Passiver Verteidiger am Sechser", "Aktiver Verteidiger startet mit dem Achter", "Zwei Achter starten, Sechser entscheidet"]
+    },
+    "tags": ["isoliert", "technik", "torabschluss", "dritter_mann", "tiefenlaeufe", "grosstor", "torwart"],
+    "animation": {
+      "version": 1,
+      "pitch": { "width_m": 40, "length_m": 35, "markings": "box" },
+      "tokens": [
+        { "id": "s6", "kind": "player", "team": "own", "label": "6" },
+        { "id": "a8", "kind": "player", "team": "own", "label": "8" },
+        { "id": "a10", "kind": "player", "team": "own", "label": "10" },
+        { "id": "tw", "kind": "player", "team": "opp", "label": "TW" },
+        { "id": "g1", "kind": "goal" },
+        { "id": "c1", "kind": "cone" },
+        { "id": "c2", "kind": "cone" },
+        { "id": "c3", "kind": "cone" }
+      ],
+      "keyframes": [
+        { "t": 0, "positions": { "g1": [20, 35], "tw": [20, 33], "c1": [20, 5], "c2": [12, 1], "c3": [28, 1], "s6": [20, 5], "a8": [12, 1], "a10": [28, 1] }, "ball": { "holder": "a8" } },
+        { "t": 1.2, "positions": { "a8": [14, 6] }, "ball": { "holder": "s6" }, "transition": { "pass": ["a8", "s6"], "runs": [["a8", "straight"]] } },
+        { "t": 2.6, "positions": { "a8": [17, 15] }, "ball": { "holder": "a8" }, "transition": { "pass": ["s6", "a8"], "runs": [["a8", "straight"]] } },
+        { "t": 3.6, "positions": { "a8": [18, 19] }, "ball": { "holder": "a8" }, "transition": { "dribble": "a8" } },
+        { "t": 4.6, "positions": { "a8": [18, 19] }, "ball": { "at_m": [23, 34.5] }, "transition": { "pass": ["a8", "g1"] } }
+      ],
+      "loop": true
+    },
+    "source": "seed"
+  },
+  {
+    "slug": "flanke-und-strafraumbesetzung-drei-laufwege",
+    "name": "Flanke und Strafraumbesetzung mit drei Laufwegen",
+    "goal_primary": "angriffsaufbau",
+    "goals_secondary": ["torabschluss", "technik"],
+    "players_min": 8,
+    "players_max": 14,
+    "duration_min": 12,
+    "duration_max": 18,
+    "intensity": 3,
+    "field_width_m": 50,
+    "field_length_m": 40,
+    "material": [
+      { "item": "huetchen", "count": 8 },
+      { "item": "baelle", "count": 12 },
+      { "item": "grosstor", "count": 1 }
+    ],
+    "description": "Flügelspieler flankt nach Andribbeln, drei Angreifer besetzen den Strafraum nach festem Muster: erster Pfosten, zweiter Pfosten, Rückraum. Grundmuster für jede Flanke.",
+    "procedure": "Halbfeld mit Großtor und Torwart. Start beim Sechser zentral, Pass auf den Flügelspieler an der Seitenlinie. Der Flügelspieler dribbelt an ein Hütchen auf Strafraumhöhe und flankt. Gleichzeitig starten: der Stürmer zum ersten Pfosten, der ballferne Flügelspieler zum zweiten Pfosten, der Achter in den Rückraum an die Strafraumkante. Der Flankengeber wählt einen der drei. Beide Seiten trainieren, alle rotieren.",
+    "coaching_points": [
+      "Laufwege kreuzen: der Stürmer geht erst kurz weg, dann zum ersten Pfosten",
+      "Rückraumspieler kommt als Letzter, mit Tempo, für den Abpraller oder die scharfe Flanke zurück",
+      "Flanke früh und scharf, hinter die Verteidiger, nicht hoch auf den Torwart",
+      "Zweiter Pfosten: weit bleiben, erst beim Schlag einlaufen"
+    ],
+    "variations": {
+      "easier": ["Flanke aus dem Stand", "Nur zwei Laufwege"],
+      "harder": ["Zwei passive Verteidiger im Strafraum", "Ein aktiver Verteidiger gegen den Flügelspieler", "Flanke muss flach sein"]
+    },
+    "tags": ["isoliert", "technik", "fluegelspiel", "strafraumbesetzung", "torabschluss", "breite", "grosstor", "torwart"],
+    "animation": {
+      "version": 1,
+      "pitch": { "width_m": 50, "length_m": 40, "markings": "box" },
+      "tokens": [
+        { "id": "s6", "kind": "player", "team": "own", "label": "6" },
+        { "id": "ra", "kind": "player", "team": "own", "label": "7" },
+        { "id": "la", "kind": "player", "team": "own", "label": "11" },
+        { "id": "st", "kind": "player", "team": "own", "label": "9" },
+        { "id": "a8", "kind": "player", "team": "own", "label": "8" },
+        { "id": "tw", "kind": "player", "team": "opp", "label": "TW" },
+        { "id": "g1", "kind": "goal" }
+      ],
+      "keyframes": [
+        { "t": 0, "positions": { "g1": [25, 40], "tw": [25, 38], "s6": [25, 8], "ra": [46, 14], "la": [6, 14], "st": [25, 20], "a8": [30, 12] }, "ball": { "holder": "s6" } },
+        { "t": 1.3, "positions": { "ra": [46, 16] }, "ball": { "holder": "ra" }, "transition": { "pass": ["s6", "ra"] } },
+        { "t": 3.0, "positions": { "ra": [45, 28], "st": [23, 24], "la": [8, 24], "a8": [28, 18] }, "ball": { "holder": "ra" }, "transition": { "dribble": "ra", "runs": [["st", "straight"], ["la", "straight"], ["a8", "straight"]] } },
+        { "t": 4.5, "positions": { "st": [29, 35], "la": [17, 34], "a8": [26, 25], "ra": [45, 28] }, "ball": { "holder": "st" }, "transition": { "pass": ["ra", "st"], "runs": [["st", "curve"], ["la", "straight"], ["a8", "straight"]] } },
+        { "t": 5.3, "positions": { "st": [29, 35] }, "ball": { "at_m": [22, 39.5] }, "transition": { "pass": ["st", "g1"] } }
+      ],
+      "loop": true
+    },
+    "source": "seed"
+  },
+  {
+    "slug": "torabschluss-1v1-vom-fluegel",
+    "name": "1 gegen 1 vom Flügel mit Abschluss",
+    "goal_primary": "torabschluss",
+    "goals_secondary": ["angriffsaufbau", "technik"],
+    "players_min": 8,
+    "players_max": 14,
+    "duration_min": 12,
+    "duration_max": 16,
+    "intensity": 4,
+    "field_width_m": 40,
+    "field_length_m": 35,
+    "material": [
+      { "item": "huetchen", "count": 6 },
+      { "item": "baelle", "count": 12 },
+      { "item": "leibchen", "count": 4 },
+      { "item": "grosstor", "count": 1 }
+    ],
+    "description": "Flügelspieler bekommt den Ball an der Seitenlinie und muss im 1 gegen 1 am Außenverteidiger vorbei: Flanke, Abschluss oder Pass in den Rückraum. Ein Stürmer wartet im Strafraum.",
+    "procedure": "Halbfeld mit Großtor und Torwart. Flügelzone 15 m breit. Anspieler an der Mittellinie passt auf den Flügelspieler, gleichzeitig startet ein Außenverteidiger aus 5 m Abstand. Der Flügelspieler dribbelt außen vorbei und flankt oder zieht nach innen und schließt ab. Ein Stürmer im Strafraum verwertet die Flanke, ein Innenverteidiger deckt ihn passiv. Bei Ballgewinn spielt der Verteidiger auf den Anspieler. Seiten wechseln.",
+    "coaching_points": [
+      "Verteidiger mit Tempo andribbeln, Finte in Strafraumnähe, nicht 25 m davor",
+      "Nach dem Vorbeigehen: Blick hoch, Flanke früh schlagen oder zur Grundlinie durchgehen",
+      "Nach innen ziehen: Abschluss mit dem starken Fuß aus dem Halbraum",
+      "Stürmer: Bewegung erst, wenn der Flügelspieler am Verteidiger vorbei ist"
+    ],
+    "variations": {
+      "easier": ["Verteidiger startet erst nach der Ballannahme", "Kein Innenverteidiger"],
+      "harder": ["Innenverteidiger aktiv", "Zweiter Angreifer als Rückraumoption, zweiter Verteidiger als Absicherung", "Abschluss innerhalb von 6 Sekunden"]
+    },
+    "tags": ["isoliert", "torabschluss", "dribbling", "fluegelspiel", "zweikampf", "grosstor", "torwart"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "abschluss-2v1-nach-vorwaertspass",
+    "name": "Abschluss 2 gegen 1 nach Vorwärtspass",
+    "goal_primary": "entscheidungsverhalten",
+    "goals_secondary": ["torabschluss", "umschalten_offensiv"],
+    "players_min": 7,
+    "players_max": 12,
+    "duration_min": 10,
+    "duration_max": 15,
+    "intensity": 4,
+    "field_width_m": 30,
+    "field_length_m": 30,
+    "material": [
+      { "item": "huetchen", "count": 4 },
+      { "item": "baelle", "count": 12 },
+      { "item": "leibchen", "count": 3 },
+      { "item": "grosstor", "count": 1 }
+    ],
+    "description": "Zwei Angreifer bekommen einen Vorwärtspass und spielen gegen einen Verteidiger auf das Tor. Die Grundentscheidung: dribbeln oder passen, und wann.",
+    "procedure": "Feld 30 x 30 m mit Großtor und Torwart. Anspieler am Startpunkt spielt den Ball zu einem von zwei Angreifern, die 20 m vor dem Tor stehen. Gleichzeitig startet ein Verteidiger neben dem Tor heraus. Die zwei Angreifer müssen innerhalb von 6 Sekunden abschließen. Danach nächstes Paar, Verteidiger wechselt nach drei Aktionen.",
+    "coaching_points": [
+      "Ballführender dribbelt direkt auf den Verteidiger, damit der sich entscheiden muss",
+      "Pass erst, wenn der Verteidiger zum Ball geht; vorher wäre der Mitspieler leicht zu decken",
+      "Der zweite Angreifer hält 8 bis 10 m Abstand und bleibt auf Ballhöhe",
+      "Abschluss sofort nach dem Pass, der Torwart hat noch nicht die Position"
+    ],
+    "variations": {
+      "easier": ["Verteidiger startet verzögert", "Kein Zeitlimit"],
+      "harder": ["Zweiter Verteidiger startet nach 3 Sekunden", "3 gegen 2 mit gleichem Aufbau", "Angreifer dürfen nur einen Pass spielen"]
+    },
+    "tags": ["isoliert", "entscheidungsverhalten", "torabschluss", "ueberzahl", "grosstor", "torwart", "umschalten_offensiv"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "tiefenlaeufe-timing-schablone",
+    "name": "Tiefenläufe mit Timing (Schablone)",
+    "goal_primary": "tiefenlaeufe",
+    "goals_secondary": ["torabschluss", "technik"],
+    "players_min": 8,
+    "players_max": 14,
+    "duration_min": 10,
+    "duration_max": 15,
+    "intensity": 3,
+    "field_width_m": 40,
+    "field_length_m": 40,
+    "material": [
+      { "item": "huetchen", "count": 8 },
+      { "item": "baelle", "count": 12 },
+      { "item": "grosstor", "count": 1 },
+      { "item": "stangen", "count": 4 }
+    ],
+    "description": "Steckpass hinter eine markierte Abwehrlinie mit Abseitsregel. Der Stürmer lernt den Moment für den Start, der Passgeber den Moment für den Pass.",
+    "procedure": "Halbfeld mit Großtor und Torwart. Eine Stangenlinie 22 m vor dem Tor markiert die Abwehrkette (Abseitslinie). Der Zehner bekommt den Ball 35 m vor dem Tor, dribbelt an und spielt den Steckpass hinter die Linie. Der Stürmer startet aus einer Position auf Höhe der Linie, darf beim Pass aber nicht dahinter sein. Trainer pfeift Abseits. Abschluss mit maximal zwei Kontakten. Zwei Stürmer wechseln sich ab, links und rechts der Mitte.",
+    "coaching_points": [
+      "Stürmer: erst weg vom Ball (Bewegung nach hinten oder zur Seite), dann Start in die Tiefe",
+      "Passgeber: den Pass spielen, wenn der Stürmer den Körper dreht, nicht wenn er schon läuft",
+      "Steckpass mit Tempo in den Raum, nicht auf den Fuß",
+      "Blickkontakt vor dem Start, dann kein Zögern"
+    ],
+    "variations": {
+      "easier": ["Ohne Abseitsregel", "Stangenlinie näher am Tor"],
+      "harder": ["Zwei passive Verteidiger auf der Linie, die mit dem Start herausrücken", "Zwei Stürmer starten gekreuzt", "Als 3v2 mit aktiver Kette"]
+    },
+    "tags": ["isoliert", "tiefenlaeufe", "torabschluss", "passspiel", "grosstor", "torwart"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "angriffsaufbau-breite-7v7-aussenzonen",
+    "name": "Angriffsaufbau mit Breite: 7 gegen 7 mit Außenzonen",
+    "goal_primary": "angriffsaufbau",
+    "goals_secondary": ["positionsspiel", "torabschluss"],
+    "players_min": 14,
+    "players_max": 16,
+    "duration_min": 20,
+    "duration_max": 25,
+    "intensity": 4,
+    "field_width_m": 50,
+    "field_length_m": 55,
+    "material": [
+      { "item": "huetchen", "count": 10 },
+      { "item": "baelle", "count": 8 },
+      { "item": "leibchen", "count": 14 },
+      { "item": "grosstor", "count": 2 }
+    ],
+    "description": "Spielform mit Außenzonen, die nur vom angreifenden Team betreten werden dürfen. Zwingt zur Breite im Angriff und belohnt Flanken und Hereingaben.",
+    "procedure": "Feld 50 x 55 m mit zwei Großtoren und Torhütern. Außenzonen 8 m breit auf beiden Seiten über die gesamte Länge. Sieben gegen sieben. Außenzonen dürfen nur vom ballbesitzenden Team betreten werden, maximal ein Spieler pro Zone. Ein Tor nach Hereingabe aus der Außenzone zählt doppelt. Verteidiger dürfen erst in der Außenzone eingreifen, wenn der Ball dort ist.",
+    "coaching_points": [
+      "Außenzonen sofort besetzen, wenn der Ball gewonnen wird: Breite zuerst",
+      "Verlagerung auf die freie Außenzone, wenn das Zentrum eng ist",
+      "Hereingabe früh, hinter die Kette, mindestens drei Spieler im Strafraum",
+      "Nach der Hereingabe bleibt ein Spieler als Restverteidigung vor dem Strafraum"
+    ],
+    "variations": {
+      "easier": ["Außenzonen komplett frei von Verteidigern", "Zwei Spieler pro Zone"],
+      "harder": ["Zwei Kontakte in der Außenzone", "Hereingabe muss flach sein", "Acht gegen acht"]
+    },
+    "tags": ["spielform_gross", "breite", "fluegelspiel", "strafraumbesetzung", "positionsspiel", "grosstor", "torwart", "provokation"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "torschuss-wettkampf-drei-teams",
+    "name": "Torschusswettkampf mit drei Teams",
+    "goal_primary": "torabschluss",
+    "goals_secondary": ["technik", "ausdauer"],
+    "players_min": 9,
+    "players_max": 15,
+    "duration_min": 12,
+    "duration_max": 16,
+    "intensity": 4,
+    "field_width_m": 40,
+    "field_length_m": 30,
+    "material": [
+      { "item": "huetchen", "count": 6 },
+      { "item": "baelle", "count": 15 },
+      { "item": "leibchen", "count": 10 },
+      { "item": "grosstor", "count": 1 }
+    ],
+    "description": "Drei Teams schießen abwechselnd aus verschiedenen Situationen auf das Tor: Direktschuss, Schuss nach Ablage, Schuss nach Andribbeln. Punkte pro Tor, Team mit den meisten Punkten gewinnt.",
+    "procedure": "Halbfeld mit Großtor und Torwart. Drei Stationen 20 bis 25 m vor dem Tor: 1. Direktschuss nach Pass vom Trainer. 2. Ablage vom Stürmer, Schuss aus der zweiten Reihe. 3. Andribbeln um ein Hütchen, Schuss aus 16 m. Jedes Team durchläuft alle drei Stationen mit je fünf Schüssen pro Spieler. Tor ins untere Eck zählt doppelt (Markierung mit Hütchen an den Pfosten).",
+    "coaching_points": [
+      "Standbein neben dem Ball, Oberkörper über dem Ball, sonst geht der Schuss drüber",
+      "Direktschuss: Ball anschauen, dann Blick auf das Tor vor dem letzten Schritt",
+      "Nach Ablage: Ball nicht mehr stoppen, erster Kontakt ist der Schuss",
+      "Platziert schlägt hart: das untere Eck ist das Ziel"
+    ],
+    "variations": {
+      "easier": ["Schüsse aus 16 m", "Kein Doppelpunkt"],
+      "harder": ["Nur schwacher Fuß an Station 1", "Passiver Verteidiger an Station 3", "Zeitlimit: 3 Sekunden vom Pass bis zum Schuss"]
+    },
+    "tags": ["isoliert", "technik", "torabschluss", "wettkampf", "grosstor", "torwart"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "abschluss-aus-zweiter-reihe-nach-ablage",
+    "name": "Abschluss aus der zweiten Reihe nach Ablage",
+    "goal_primary": "torabschluss",
+    "goals_secondary": ["angriffsaufbau", "technik"],
+    "players_min": 8,
+    "players_max": 14,
+    "duration_min": 10,
+    "duration_max": 15,
+    "intensity": 3,
+    "field_width_m": 40,
+    "field_length_m": 35,
+    "material": [
+      { "item": "huetchen", "count": 6 },
+      { "item": "baelle", "count": 12 },
+      { "item": "leibchen", "count": 2 },
+      { "item": "grosstor", "count": 1 }
+    ],
+    "description": "Stürmer mit Rücken zum Tor legt auf den nachrückenden Mittelfeldspieler ab. Trainiert die Ablage unter Druck und den Abschluss aus 18 bis 22 Metern.",
+    "procedure": "Halbfeld mit Großtor und Torwart. Der Stürmer steht mit Rücken zum Tor 20 m vor dem Tor, ein Verteidiger passiv im Rücken. Der Mittelfeldspieler spielt aus 35 m in den Fuß des Stürmers und rückt nach. Der Stürmer legt seitlich ab, der Mittelfeldspieler schließt direkt oder nach einer Mitnahme ab. Danach dreht der Stürmer ab und geht auf den Abpraller. Rotation nach jedem Durchgang.",
+    "coaching_points": [
+      "Stürmer: Ball abschirmen, Ablage mit dem gegnerfernen Fuß in den Lauf des Mitspielers",
+      "Mittelfeldspieler: Pass scharf, dann sofort nachrücken mit Blick auf den Ball",
+      "Abschluss flach, platziert, mit dem Innenspann; Kraft kommt aus der Hüfte",
+      "Nach dem Schuss geht der Stürmer zum Tor: Abpraller sind Tore"
+    ],
+    "variations": {
+      "easier": ["Verteidiger fehlt", "Ablage darf gestoppt werden"],
+      "harder": ["Verteidiger aktiv", "Zweiter Verteidiger stört den Schützen", "Ablage nach Flugball"]
+    },
+    "tags": ["isoliert", "torabschluss", "technik", "ballannahme", "grosstor", "torwart"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "strafraumbesetzung-5v4-plus-tw-halbfeld",
+    "name": "Angriff gegen kompakte Abwehr: 5 gegen 4 plus Torwart",
+    "goal_primary": "angriffsaufbau",
+    "goals_secondary": ["torabschluss", "entscheidungsverhalten"],
+    "players_min": 10,
+    "players_max": 14,
+    "duration_min": 15,
+    "duration_max": 20,
+    "intensity": 4,
+    "field_width_m": 50,
+    "field_length_m": 40,
+    "material": [
+      { "item": "huetchen", "count": 6 },
+      { "item": "baelle", "count": 10 },
+      { "item": "leibchen", "count": 5 },
+      { "item": "grosstor", "count": 1 },
+      { "item": "minitore", "count": 2 }
+    ],
+    "description": "Fünf Angreifer gegen eine Viererkette plus Torwart im Halbfeld. Die Angreifer müssen über die Flügel oder durch schnelle Kombinationen zum Abschluss kommen. Die Kette punktet nach Ballgewinn auf Minitore.",
+    "procedure": "Halbfeld mit Großtor und Torwart, zwei Minitore an der Mittellinie. Fünf Angreifer (zwei Flügel, ein Stürmer, zwei Achter) gegen vier Verteidiger. Start beim Achter an der Mittellinie. Angreifer haben 15 Sekunden für den Abschluss. Verteidiger punkten mit Ballgewinn und Treffer auf ein Minitor innerhalb von 8 Sekunden. Nach 8 Minuten wechseln die Rollen.",
+    "coaching_points": [
+      "Gegen einen tiefen Block: Ball schnell laufen lassen, Verteidiger müssen ständig verschieben",
+      "Flügelspieler bleiben breit bis zum Pass, nicht vorher einrücken",
+      "Bei Flanke: erster Pfosten, zweiter Pfosten, Rückraum besetzt",
+      "Zweiter Achter bleibt als Absicherung, sonst kontert die Kette"
+    ],
+    "variations": {
+      "easier": ["Drei Verteidiger", "Kein Zeitlimit"],
+      "harder": ["Sechser als fünfter Verteidiger", "Zwei Kontakte im letzten Drittel", "Tore nach Hereingabe zählen doppelt"]
+    },
+    "tags": ["spielform_klein", "strafraumbesetzung", "fluegelspiel", "torabschluss", "entscheidungsverhalten", "ueberzahl", "grosstor", "torwart", "minitore"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "kopfball-abschluss-nach-flanke-stationen",
+    "name": "Kopfballabschluss nach Flanke (Stationen)",
+    "goal_primary": "technik",
+    "goals_secondary": ["standards_offensiv", "torabschluss"],
+    "players_min": 6,
+    "players_max": 14,
+    "duration_min": 10,
+    "duration_max": 15,
+    "intensity": 3,
+    "field_width_m": 40,
+    "field_length_m": 30,
+    "material": [
+      { "item": "huetchen", "count": 6 },
+      { "item": "baelle", "count": 12 },
+      { "item": "grosstor", "count": 1 }
+    ],
+    "description": "Kopfballtechnik in drei Stufen: aus dem Stand nach Zuwurf, aus dem Sprung nach Zuwurf, aus dem Lauf nach Flanke. Bereitet Standards und Flankenverwertung vor.",
+    "procedure": "Halbfeld mit Großtor und Torwart. Station 1: Partner wirft aus 5 m zu, Kopfball aus dem Stand ins Tor. Station 2: Zuwurf, Kopfball aus dem beidbeinigen Sprung. Station 3: Flanke vom Flügel, Anlauf aus 10 m, Kopfball nach Sprung mit einem Bein. Jeder Spieler zehn Wiederholungen pro Station, Torwart hält.",
+    "coaching_points": [
+      "Augen offen, Ball mit der Stirn treffen, nicht mit dem Scheitel",
+      "Oberkörper bogenspannen, Nacken fest",
+      "Kopfball nach unten in Richtung Boden: der Torwart hat es schwerer",
+      "Beim Sprung aus dem Lauf den Absprung so setzen, dass der Ball am höchsten Punkt getroffen wird"
+    ],
+    "variations": {
+      "easier": ["Nur Station 1 und 2", "Weiche Bälle"],
+      "harder": ["Passiver Gegenspieler bei Station 3", "Kopfball aufs Ziel: Hütchen in den Ecken", "Flanke vom anderen Fuß"]
+    },
+    "tags": ["isoliert", "technik", "kopfball", "torabschluss", "standards_offensiv", "grosstor", "torwart"],
+    "animation": null,
+    "source": "seed"
+  }
+]

@@ -1,0 +1,412 @@
+[
+  {
+    "slug": "umschalten-4v4-plus-2-vier-minitore",
+    "name": "Umschaltspiel 4 gegen 4 plus 2 auf vier Minitore",
+    "goal_primary": "umschalten_offensiv",
+    "goals_secondary": ["umschalten_defensiv", "entscheidungsverhalten"],
+    "players_min": 10,
+    "players_max": 12,
+    "duration_min": 15,
+    "duration_max": 20,
+    "intensity": 5,
+    "field_width_m": 30,
+    "field_length_m": 35,
+    "material": [
+      { "item": "huetchen", "count": 4 },
+      { "item": "baelle", "count": 8 },
+      { "item": "leibchen", "count": 10 },
+      { "item": "minitore", "count": 4 }
+    ],
+    "description": "Kleine Spielform mit je zwei Minitoren pro Seite und zwei Neutralen. Dauernde Umschaltmomente, weil nach jedem Ballgewinn sofort zwei Tore zur Auswahl stehen.",
+    "procedure": "Feld 30 x 35 m, je zwei Minitore an den Stirnseiten mit 10 m Abstand. Vier gegen vier plus zwei Neutrale, die mit dem Ballbesitzteam spielen. Tore zählen nur, wenn alle vier Feldspieler des Torschützenteams in der gegnerischen Hälfte sind. Nach einem Tor spielt der Trainer sofort einen neuen Ball zum Team, das kassiert hat. Vier Durchgänge zu 3 Minuten.",
+    "coaching_points": [
+      "Nach Ballgewinn: erster Blick auf das freie Minitor, zweiter Blick auf die Verlagerung",
+      "Nach Ballverlust: sofort zwischen Ball und das nähere Minitor",
+      "Neutrale: einen Kontakt, Tempo aufnehmen",
+      "Nachrücken als Team, sonst zählt das Tor nicht"
+    ],
+    "variations": {
+      "easier": ["Tore zählen immer", "Drei Neutrale"],
+      "harder": ["Zwei Kontakte", "Nach Ballgewinn maximal 8 Sekunden bis zum Abschluss", "Nur das ballferne Minitor zählt"]
+    },
+    "tags": ["spielform_klein", "umschalten_offensiv", "umschalten_defensiv", "entscheidungsverhalten", "neutrale", "minitore", "provokation"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "restverteidigung-6v6-plus-konterspieler",
+    "name": "Restverteidigung 6 gegen 6 mit Konterspielern",
+    "goal_primary": "restverteidigung",
+    "goals_secondary": ["umschalten_defensiv", "kompaktheit"],
+    "players_min": 14,
+    "players_max": 16,
+    "duration_min": 15,
+    "duration_max": 25,
+    "intensity": 4,
+    "field_width_m": 45,
+    "field_length_m": 60,
+    "material": [
+      { "item": "huetchen", "count": 8 },
+      { "item": "baelle", "count": 8 },
+      { "item": "leibchen", "count": 8 },
+      { "item": "grosstor", "count": 2 }
+    ],
+    "description": "Das angreifende Team spielt in Überzahl, hinter der Mittellinie warten zwei Konterspieler des Gegners. Bei Ballverlust läuft ein Konter in Unterzahl gegen die Restverteidigung. Trainiert das Absichern während des eigenen Angriffs.",
+    "procedure": "Feld 45 x 60 m mit zwei Großtoren und Torhütern. Team A greift mit sechs Spielern gegen vier Verteidiger von Team B an. Zwei weitere Spieler von B warten als Konterspieler in der Hälfte von A, dürfen aber erst bei Ballgewinn ihres Teams aktiv werden. Team A muss bei jedem Angriff mindestens zwei Spieler als Restverteidigung hinter dem Ball halten. Bei Ballverlust kontert B mit vier plus zwei gegen die Restverteidigung. Tor für A: 1 Punkt. Kontertor für B: 2 Punkte. Wechsel der Rollen nach 6 Minuten.",
+    "coaching_points": [
+      "Restverteidigung steht gestaffelt: einer auf Höhe des Konterspielers, einer dahinter",
+      "Der Sechser bleibt bei Flanken und Abschlüssen vor dem Strafraum, nicht drin",
+      "Bei Ballverlust: sofortiges Gegenpressing am Ball, Restverteidigung fällt gleichzeitig zurück",
+      "Angreifer im Konter: sofort in die Tiefe, keinen Pass zu viel"
+    ],
+    "variations": {
+      "easier": ["Ein Konterspieler", "Restverteidigung darf drei Spieler haben"],
+      "harder": ["Drei Konterspieler", "Restverteidigung nur ein Spieler plus Torwart", "Konter hat 10 Sekunden Zeitlimit"]
+    },
+    "tags": ["spielform_gross", "restverteidigung", "umschalten_defensiv", "konter", "torwart", "grosstor", "ueberzahl"],
+    "animation": {
+      "version": 1,
+      "pitch": { "width_m": 45, "length_m": 60, "markings": "half" },
+      "tokens": [
+        { "id": "a1", "kind": "player", "team": "own", "label": "6" },
+        { "id": "a2", "kind": "player", "team": "own", "label": "4" },
+        { "id": "a3", "kind": "player", "team": "own", "label": "8" },
+        { "id": "a4", "kind": "player", "team": "own", "label": "10" },
+        { "id": "a5", "kind": "player", "team": "own", "label": "7" },
+        { "id": "a6", "kind": "player", "team": "own", "label": "9" },
+        { "id": "b1", "kind": "player", "team": "opp", "label": "" },
+        { "id": "b2", "kind": "player", "team": "opp", "label": "" },
+        { "id": "b3", "kind": "player", "team": "opp", "label": "" },
+        { "id": "b4", "kind": "player", "team": "opp", "label": "" },
+        { "id": "k1", "kind": "player", "team": "opp", "label": "K" },
+        { "id": "k2", "kind": "player", "team": "opp", "label": "K" },
+        { "id": "tw", "kind": "player", "team": "own", "label": "TW" },
+        { "id": "g1", "kind": "goal" },
+        { "id": "g2", "kind": "goal" }
+      ],
+      "static": [ { "kind": "zone", "rect_m": [0, 20, 45, 12], "color": "blue", "opacity": 0.12 }, { "kind": "text", "at_m": [22.5, 21], "text": "Restverteidigung" } ],
+      "keyframes": [
+        { "t": 0, "positions": { "g1": [22.5, 0], "g2": [22.5, 60], "tw": [22.5, 3], "a1": [22, 28], "a2": [14, 26], "a3": [16, 42], "a4": [30, 44], "a5": [40, 48], "a6": [24, 52], "b1": [14, 50], "b2": [22, 52], "b3": [30, 51], "b4": [38, 50], "k1": [10, 22], "k2": [35, 24] }, "ball": { "holder": "a4" } },
+        { "t": 1.5, "positions": { "a5": [42, 54], "b4": [39, 53] }, "ball": { "holder": "a5" }, "transition": { "pass": ["a4", "a5"] } },
+        { "t": 3.0, "positions": { "a5": [40, 55], "b4": [41, 55], "a6": [26, 55] }, "ball": { "holder": "b4" }, "transition": { "dribble": "a5" } },
+        { "t": 4.5, "positions": { "b4": [36, 45], "k2": [34, 34], "k1": [12, 30], "a1": [24, 30], "a2": [15, 27], "a3": [20, 40], "a4": [30, 40] }, "ball": { "holder": "k2" }, "transition": { "pass": ["b4", "k2"], "runs": [["k1", "straight"], ["a1", "straight"], ["a2", "straight"]] } },
+        { "t": 6.0, "positions": { "k2": [30, 22], "k1": [14, 18], "a1": [26, 20], "a2": [17, 16], "a3": [22, 30] }, "ball": { "holder": "k2" }, "transition": { "dribble": "k2", "runs": [["a3", "straight"]] } }
+      ],
+      "loop": true
+    },
+    "source": "seed"
+  },
+  {
+    "slug": "umschalten-defensiv-3v2-nach-abschluss",
+    "name": "Umschalten defensiv: 3 gegen 2, dann 2 gegen 3",
+    "goal_primary": "umschalten_defensiv",
+    "goals_secondary": ["torabschluss", "umschalten_offensiv"],
+    "players_min": 10,
+    "players_max": 14,
+    "duration_min": 12,
+    "duration_max": 18,
+    "intensity": 5,
+    "field_width_m": 35,
+    "field_length_m": 45,
+    "material": [
+      { "item": "huetchen", "count": 6 },
+      { "item": "baelle", "count": 10 },
+      { "item": "leibchen", "count": 7 },
+      { "item": "grosstor", "count": 2 }
+    ],
+    "description": "Drei Angreifer greifen gegen zwei Verteidiger an. Direkt nach dem Abschluss oder Ballgewinn kontern die zwei Verteidiger mit einem hinzukommenden dritten Spieler gegen die drei Angreifer. Wellenform mit Fokus auf das Zurücklaufen.",
+    "procedure": "Feld 35 x 45 m mit zwei Großtoren und Torhütern. Welle 1: drei Angreifer starten von der Mittellinie gegen zwei Verteidiger. Nach Abschluss, Ballgewinn oder Aus startet sofort Welle 2: die zwei Verteidiger plus ein Spieler, der von der Seitenlinie an der Mittellinie einläuft, kontern gegen die drei Angreifer, die jetzt verteidigen müssen. Danach neue Gruppe. Tore zählen für beide Wellen.",
+    "coaching_points": [
+      "Nach dem Abschluss ist niemand fertig: sofort umdrehen und zurücksprinten",
+      "Der ballnächste Angreifer verzögert, die anderen laufen den kürzesten Weg zum Tor",
+      "Erst den Raum vor dem Tor schließen, dann den Ball attackieren",
+      "Konterteam: Tempo, breite Anspielstationen, schnelle Entscheidung"
+    ],
+    "variations": {
+      "easier": ["Welle 2 startet mit 3 Sekunden Verzögerung", "Nur zwei Konterspieler"],
+      "harder": ["Welle 2 mit zwei Einläufern (4 gegen 3)", "Angreifer starten den Rückweg erst nach Kommando des Trainers", "Konter hat 8 Sekunden"]
+    },
+    "tags": ["spielform_klein", "umschalten_defensiv", "umschalten_offensiv", "konter", "torabschluss", "grosstor", "torwart"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "schattenlaufen-viererkette-verschieben",
+    "name": "Schattenlaufen: Viererkette verschieben",
+    "goal_primary": "verschieben",
+    "goals_secondary": ["kompaktheit"],
+    "players_min": 4,
+    "players_max": 10,
+    "duration_min": 10,
+    "duration_max": 15,
+    "intensity": 2,
+    "field_width_m": 50,
+    "field_length_m": 35,
+    "material": [
+      { "item": "huetchen", "count": 6 },
+      { "item": "baelle", "count": 1 }
+    ],
+    "description": "Die Viererkette (optional mit Sechsern davor) verschiebt gemeinsam nach dem Ball, den der Trainer oder ein Anspieler bewegt. Reines Abstimmungstraining ohne Gegnerdruck.",
+    "procedure": "Halbfeldbreite, Viererkette auf Strafraumhöhe, optional zwei Sechser davor. Der Trainer dribbelt oder passt den Ball zu Anspielern an den Seiten. Die Kette verschiebt: ballnaher Außenverteidiger rückt heraus, die Kette schiebt geschlossen mit, der ballferne Außenverteidiger rückt ein. Bei Rückpass des Trainers schiebt die Kette hoch, bei langem Ball fällt sie. Kommandos vom Innenverteidiger. 10 bis 12 Situationen, dann Feedback.",
+    "coaching_points": [
+      "Abstände 8 bis 12 m halten, die Kette ist eine Einheit",
+      "Ballferner Außenverteidiger rückt ein bis auf Höhe des Strafraumpfostens",
+      "Ein Innenverteidiger gibt Kommandos: raus, schieben, fallen",
+      "Sechser bleiben vor der Kette und schließen den Halbraum zur Ballseite"
+    ],
+    "variations": {
+      "easier": ["Nur Kette ohne Sechser", "Trainer sagt die Bewegung vorher an"],
+      "harder": ["Zwei passive Stürmer, die die Kette binden", "Danach 6v4 mit Ballgewinn und Abschluss auf Minitore", "Fünferkette"]
+    },
+    "tags": ["isoliert", "verschieben", "kompaktheit"],
+    "animation": {
+      "version": 1,
+      "pitch": { "width_m": 50, "length_m": 35, "markings": "box" },
+      "tokens": [
+        { "id": "lv", "kind": "player", "team": "own", "label": "3" },
+        { "id": "liv", "kind": "player", "team": "own", "label": "4" },
+        { "id": "riv", "kind": "player", "team": "own", "label": "5" },
+        { "id": "rv", "kind": "player", "team": "own", "label": "2" },
+        { "id": "s6", "kind": "player", "team": "own", "label": "6" },
+        { "id": "s8", "kind": "player", "team": "own", "label": "8" },
+        { "id": "t", "kind": "player", "team": "opp", "label": "T" },
+        { "id": "x1", "kind": "player", "team": "opp", "label": "" },
+        { "id": "x2", "kind": "player", "team": "opp", "label": "" }
+      ],
+      "keyframes": [
+        { "t": 0, "positions": { "lv": [10, 14], "liv": [20, 12], "riv": [30, 12], "rv": [40, 14], "s6": [20, 20], "s8": [30, 20], "t": [25, 32], "x1": [4, 26], "x2": [46, 26] }, "ball": { "holder": "t" } },
+        { "t": 1.5, "positions": { "t": [25, 32] }, "ball": { "holder": "x2" }, "transition": { "pass": ["t", "x2"] } },
+        { "t": 3.5, "positions": { "rv": [43, 20], "riv": [34, 15], "liv": [25, 13], "lv": [17, 13], "s8": [37, 23], "s6": [27, 21] }, "ball": { "holder": "x2" }, "transition": { "runs": [["rv", "straight"], ["riv", "straight"], ["liv", "straight"], ["lv", "straight"], ["s8", "straight"], ["s6", "straight"]] } },
+        { "t": 5.0, "positions": { "x2": [46, 26] }, "ball": { "holder": "t" }, "transition": { "pass": ["x2", "t"] } },
+        { "t": 6.5, "positions": { "t": [25, 32] }, "ball": { "holder": "x1" }, "transition": { "pass": ["t", "x1"] } },
+        { "t": 8.5, "positions": { "lv": [7, 20], "liv": [16, 15], "riv": [25, 13], "rv": [33, 13], "s6": [13, 23], "s8": [23, 21] }, "ball": { "holder": "x1" }, "transition": { "runs": [["lv", "straight"], ["liv", "straight"], ["riv", "straight"], ["rv", "straight"], ["s6", "straight"], ["s8", "straight"]] } }
+      ],
+      "loop": true
+    },
+    "source": "seed"
+  },
+  {
+    "slug": "verschieben-7v7-drei-tore-nebeneinander",
+    "name": "Verschieben 7 gegen 7 auf drei Tore nebeneinander",
+    "goal_primary": "verschieben",
+    "goals_secondary": ["kompaktheit", "angriffsaufbau"],
+    "players_min": 14,
+    "players_max": 16,
+    "duration_min": 15,
+    "duration_max": 20,
+    "intensity": 4,
+    "field_width_m": 50,
+    "field_length_m": 40,
+    "material": [
+      { "item": "huetchen", "count": 4 },
+      { "item": "baelle", "count": 8 },
+      { "item": "leibchen", "count": 14 },
+      { "item": "minitore", "count": 6 }
+    ],
+    "description": "Breites Feld mit drei Minitoren pro Seite. Das verteidigende Team muss ständig verschieben, das angreifende Team sucht die Verlagerung auf das freie Tor.",
+    "procedure": "Feld 50 x 40 m, drei Minitore auf jeder Stirnseite, jeweils links, mittig und rechts. Sieben gegen sieben. Tore zählen auf alle drei Minitore, ein Tor auf das ballferne Außentor nach Verlagerung zählt doppelt. Nach einem Tor spielt das kassierende Team vom mittleren Tor aus weiter.",
+    "coaching_points": [
+      "Verteidigen: Block auf die Ballseite verschieben, das ballferne Tor bewusst offen lassen, aber die Verlagerung mit dem Körper erschweren",
+      "Angreifen: Gegner auf eine Seite locken, dann schnell verlagern",
+      "Verlagerung über den Sechser, nicht über die Kette (zu langsam)",
+      "Nach Verlagerung: sofort Tempo, sonst hat der Gegner verschoben"
+    ],
+    "variations": {
+      "easier": ["Mittleres Tor zählt nicht", "Größeres Feld"],
+      "harder": ["Zwei Kontakte", "Verlagerung muss per Flugball erfolgen", "Acht gegen acht"]
+    },
+    "tags": ["spielform_klein", "verschieben", "kompaktheit", "breite", "minitore", "gleichzahl"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "konter-3v2-plus-1-nachruecker",
+    "name": "Konter 3 gegen 2 plus 1 Nachrücker",
+    "goal_primary": "umschalten_offensiv",
+    "goals_secondary": ["torabschluss", "entscheidungsverhalten"],
+    "players_min": 8,
+    "players_max": 14,
+    "duration_min": 12,
+    "duration_max": 18,
+    "intensity": 5,
+    "field_width_m": 40,
+    "field_length_m": 45,
+    "material": [
+      { "item": "huetchen", "count": 6 },
+      { "item": "baelle", "count": 10 },
+      { "item": "leibchen", "count": 6 },
+      { "item": "grosstor", "count": 1 }
+    ],
+    "description": "Drei Angreifer kontern gegen zwei Verteidiger, ein dritter Verteidiger läuft von hinten ein. Die Angreifer müssen den Konter beenden, bevor die Gleichzahl hergestellt ist.",
+    "procedure": "Halbfeld mit Großtor und Torwart. Drei Angreifer starten an der Mittellinie mit Ball, zwei Verteidiger stehen auf Strafraumhöhe. Sobald der erste Pass gespielt ist, startet ein dritter Verteidiger von einem Hütchen 10 m hinter den Angreifern und jagt den Ball. Angreifer haben 10 Sekunden für den Abschluss. Bei Ballgewinn spielen die Verteidiger in eine Zielzone an der Mittellinie.",
+    "coaching_points": [
+      "Der Ballführende dribbelt mit Tempo auf den mittleren Raum, um beide Verteidiger zu binden",
+      "Außen breit und auf Höhe des Balles, nicht davor (Abseits) und nicht dahinter",
+      "Entscheidung früh treffen: Pass, wenn der Verteidiger herausrückt, sonst weiter dribbeln",
+      "Der Nachrücker läuft den Ballführenden an, nicht den freien Raum"
+    ],
+    "variations": {
+      "easier": ["Nachrücker startet erst beim zweiten Pass", "Kein Zeitlimit"],
+      "harder": ["Zwei Nachrücker", "Angreifer haben 7 Sekunden", "Start des Konters mit einem Ballgewinn aus einem 3v3-Zweikampf im Mittelfeld"]
+    },
+    "tags": ["spielform_klein", "umschalten_offensiv", "konter", "torabschluss", "entscheidungsverhalten", "ueberzahl", "grosstor", "torwart"],
+    "animation": {
+      "version": 1,
+      "pitch": { "width_m": 40, "length_m": 45, "markings": "box" },
+      "tokens": [
+        { "id": "a1", "kind": "player", "team": "own", "label": "10" },
+        { "id": "a2", "kind": "player", "team": "own", "label": "7" },
+        { "id": "a3", "kind": "player", "team": "own", "label": "11" },
+        { "id": "b1", "kind": "player", "team": "opp", "label": "" },
+        { "id": "b2", "kind": "player", "team": "opp", "label": "" },
+        { "id": "b3", "kind": "player", "team": "opp", "label": "N" },
+        { "id": "tw", "kind": "player", "team": "opp", "label": "TW" },
+        { "id": "g1", "kind": "goal" }
+      ],
+      "keyframes": [
+        { "t": 0, "positions": { "g1": [20, 45], "tw": [20, 43], "a1": [20, 2], "a2": [34, 4], "a3": [6, 4], "b1": [15, 28], "b2": [25, 28], "b3": [20, -8] }, "ball": { "holder": "a1" } },
+        { "t": 2.0, "positions": { "a1": [20, 16], "a2": [33, 16], "a3": [7, 16], "b1": [16, 26], "b2": [24, 26], "b3": [20, 4] }, "ball": { "holder": "a1" }, "transition": { "dribble": "a1", "runs": [["a2", "straight"], ["a3", "straight"], ["b3", "straight"]] } },
+        { "t": 3.5, "positions": { "a1": [20, 24], "b1": [18, 26], "b2": [23, 26], "b3": [20, 14], "a2": [33, 26], "a3": [7, 26] }, "ball": { "holder": "a1" }, "transition": { "dribble": "a1", "runs": [["b3", "straight"]] } },
+        { "t": 4.5, "positions": { "a2": [31, 34], "b2": [27, 30] }, "ball": { "holder": "a2" }, "transition": { "pass": ["a1", "a2"], "runs": [["a2", "straight"]] } },
+        { "t": 5.5, "positions": { "a2": [29, 39], "a1": [22, 33], "a3": [12, 36] }, "ball": { "holder": "a2" }, "transition": { "dribble": "a2", "runs": [["a1", "straight"], ["a3", "straight"]] } }
+      ],
+      "loop": true
+    },
+    "source": "seed"
+  },
+  {
+    "slug": "umschalten-offensiv-6v6-mittelfeldzone",
+    "name": "Umschalten offensiv nach Ballgewinn in der Mittelfeldzone",
+    "goal_primary": "umschalten_offensiv",
+    "goals_secondary": ["pressing", "tiefenlaeufe"],
+    "players_min": 12,
+    "players_max": 14,
+    "duration_min": 15,
+    "duration_max": 20,
+    "intensity": 5,
+    "field_width_m": 45,
+    "field_length_m": 55,
+    "material": [
+      { "item": "huetchen", "count": 8 },
+      { "item": "baelle", "count": 8 },
+      { "item": "leibchen", "count": 12 },
+      { "item": "grosstor", "count": 2 }
+    ],
+    "description": "Spielform in drei Zonen. Ballgewinne in der Mittelzone müssen mit maximal drei Pässen zum Abschluss führen. Belohnt direktes Umschalten nach vorn.",
+    "procedure": "Feld 45 x 55 m mit zwei Großtoren und Torhütern, geteilt in drei Zonen (15 / 25 / 15 m). Sechs gegen sechs. Regel: nach Ballgewinn in der Mittelzone darf mit maximal drei Pässen abgeschlossen werden, das Tor zählt dann doppelt. Nach Ballgewinn in einer anderen Zone gilt freies Spiel. Der Torwart des ballbesitzenden Teams eröffnet flach in die eigene Zone.",
+    "coaching_points": [
+      "Bei Ballgewinn ist der erste Pass der wichtigste: sofort nach vorn oder in den freien Raum",
+      "Zwei Spieler starten bei Ballgewinn in die Tiefe, einer bietet sich kurz an",
+      "Vor dem Ballgewinn schon wissen, wo der Mitspieler steht: Vororientierung auch beim Verteidigen",
+      "Ist der schnelle Weg zu, Ball sichern und normal aufbauen"
+    ],
+    "variations": {
+      "easier": ["Fünf Pässe erlaubt", "Zone breiter"],
+      "harder": ["Zwei Pässe", "Zeitlimit 8 Sekunden nach Ballgewinn", "Sieben gegen sieben"]
+    },
+    "tags": ["spielform_klein", "umschalten_offensiv", "konter", "pressing", "tiefenlaeufe", "grosstor", "torwart", "provokation"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "kompaktheit-block-5v5-endzonen",
+    "name": "Kompakter Block 5 gegen 5 auf Endzonen",
+    "goal_primary": "kompaktheit",
+    "goals_secondary": ["verschieben", "zweite_baelle"],
+    "players_min": 10,
+    "players_max": 12,
+    "duration_min": 15,
+    "duration_max": 20,
+    "intensity": 4,
+    "field_width_m": 35,
+    "field_length_m": 40,
+    "material": [
+      { "item": "huetchen", "count": 8 },
+      { "item": "baelle", "count": 6 },
+      { "item": "leibchen", "count": 10 }
+    ],
+    "description": "Das verteidigende Team darf nur punkten, wenn es beim Ballgewinn kompakt steht. Ein Maßband-Trick: alle fünf Verteidiger müssen in einem Radius von 15 m sein. Das Angreiferteam punktet durch Dribbling in die Endzone.",
+    "procedure": "Feld 35 x 40 m mit 5 m tiefen Endzonen. Fünf gegen fünf. Angreifer punkten mit kontrolliertem Dribbling in die Endzone. Verteidiger punkten mit Ballgewinn, aber nur, wenn im Moment des Ballgewinns kein Verteidiger weiter als 15 m vom Ball entfernt ist (Trainer schätzt oder markiert mit Hütchenraster). Nach Ballgewinn Rollentausch ohne Unterbrechung.",
+    "coaching_points": [
+      "Ballferne Spieler rücken ein, das Feld wird eng gemacht",
+      "Kette und Mittelfeld halten den Abstand unter 10 m",
+      "Wer herausrückt, wird abgesichert: der Nachbar schließt den Raum",
+      "Erst kompakt, dann aggressiv: der Zugriff kommt aus der Ordnung"
+    ],
+    "variations": {
+      "easier": ["Radius 20 m", "Vier gegen vier"],
+      "harder": ["Radius 12 m", "Angreifer mit zwei Neutralen", "Ballgewinn im Angriffsdrittel zählt doppelt"]
+    },
+    "tags": ["spielform_klein", "kompaktheit", "verschieben", "zweikampf", "gleichzahl", "provokation"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "seitenverteidigung-3v3-am-fluegel-mit-flanke",
+    "name": "Seitenverteidigung 3 gegen 3 am Flügel",
+    "goal_primary": "verschieben",
+    "goals_secondary": ["standards_defensiv", "kompaktheit"],
+    "players_min": 10,
+    "players_max": 14,
+    "duration_min": 15,
+    "duration_max": 20,
+    "intensity": 4,
+    "field_width_m": 50,
+    "field_length_m": 40,
+    "material": [
+      { "item": "huetchen", "count": 8 },
+      { "item": "baelle", "count": 8 },
+      { "item": "leibchen", "count": 6 },
+      { "item": "grosstor", "count": 1 }
+    ],
+    "description": "Auf dem Flügel spielen drei gegen drei, im Zentrum warten Angreifer und Verteidiger auf die Flanke. Trainiert das Verteidigen der Außenbahn und das Verhalten im Strafraum bei Flanken.",
+    "procedure": "Halbfeld mit Großtor und Torwart. Flügelzone 15 m breit mit drei Angreifern gegen drei Verteidiger (Außenverteidiger, Außenmittelfeld, Sechser). Im Zentrum zwei Angreifer gegen zwei Innenverteidiger. Angreifer versuchen, eine Flanke zu schlagen oder in den Strafraum zu dribbeln. Verteidiger punkten mit Ballgewinn und Pass in eine Zielzone an der Mittellinie. Nach 6 Minuten Seitenwechsel.",
+    "coaching_points": [
+      "Außenverteidiger: den Flankenfuß zustellen, nach innen lenken",
+      "Sechser sichert den Halbraum, nicht den Flügel",
+      "Innenverteidiger: bei Flanke zwischen Gegner und Tor, Ballblick und Gegnerblick wechseln",
+      "Kommunikation: wer geht raus, wer sichert"
+    ],
+    "variations": {
+      "easier": ["Zwei Angreifer auf dem Flügel", "Flanke nur aus der Zone hinter der Strafraumlinie"],
+      "harder": ["Vier Angreifer auf dem Flügel, ein Verteidiger rückt aus dem Zentrum heraus", "Angreifer dürfen die Seite verlagern auf einen zweiten Flügel", "Abschluss innerhalb von 10 Sekunden"]
+    },
+    "tags": ["spielform_klein", "verschieben", "fluegelspiel", "zweikampf", "kompaktheit", "grosstor", "torwart", "gleichzahl"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "umschaltturnier-drei-teams-durchgehend",
+    "name": "Umschaltturnier mit drei Teams",
+    "goal_primary": "umschalten_defensiv",
+    "goals_secondary": ["umschalten_offensiv", "ausdauer"],
+    "players_min": 12,
+    "players_max": 15,
+    "duration_min": 15,
+    "duration_max": 20,
+    "intensity": 5,
+    "field_width_m": 40,
+    "field_length_m": 50,
+    "material": [
+      { "item": "huetchen", "count": 6 },
+      { "item": "baelle", "count": 10 },
+      { "item": "leibchen", "count": 10 },
+      { "item": "grosstor", "count": 2 }
+    ],
+    "description": "Drei Teams, zwei Tore. Das angreifende Team spielt auf ein Tor, bei Ballverlust oder Abschluss greift sofort das wartende Team auf das andere Tor an. Ständiges Umschalten zwischen Angriff und Verteidigung.",
+    "procedure": "Feld 40 x 50 m mit zwei Großtoren und Torhütern. Team A greift auf Tor 1 an, Team B verteidigt es. Team C wartet an der Seitenlinie auf Höhe der Mittellinie. Nach Abschluss oder Ballgewinn von B spielt B sofort auf Tor 2, Team C verteidigt es, Team A geht raus und wartet. Nach jedem Angriff rotiert es so weiter. Jedes Tor ein Punkt, Tabelle nach 15 Minuten.",
+    "coaching_points": [
+      "Das einlaufende Team muss vor dem Ball sein: sprinten, dann ordnen",
+      "Angreifendes Team: sofort in die Tiefe, der Gegner ist noch unsortiert",
+      "Nach Abschluss ohne Ballbesitz: nicht stehen bleiben, sondern an die Seitenlinie",
+      "Torwart eröffnet schnell, sobald das neue Team angreift"
+    ],
+    "variations": {
+      "easier": ["Abschlusszeit 20 Sekunden", "Rotation erst nach Tor oder Aus"],
+      "harder": ["Abschlusszeit 12 Sekunden", "Wartendes Team muss vor dem Einlaufen ein Hütchen umrunden", "Einlaufen erst bei Ballgewinn, nicht bei Abschluss"]
+    },
+    "tags": ["spielform_klein", "umschalten_defensiv", "umschalten_offensiv", "wettkampf", "ausdauer", "grosstor", "torwart"],
+    "animation": null,
+    "source": "seed"
+  }
+]

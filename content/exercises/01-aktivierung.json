@@ -1,0 +1,745 @@
+[
+  {
+    "slug": "passquadrat-mit-nachlaufen",
+    "name": "Passquadrat mit Nachlaufen",
+    "goal_primary": "aktivierung",
+    "goals_secondary": [
+      "technik"
+    ],
+    "players_min": 8,
+    "players_max": 16,
+    "duration_min": 8,
+    "duration_max": 12,
+    "intensity": 2,
+    "field_width_m": 15,
+    "field_length_m": 15,
+    "material": [
+      {
+        "item": "huetchen",
+        "count": 4
+      },
+      {
+        "item": "baelle",
+        "count": 4
+      }
+    ],
+    "description": "Passen im Quadrat mit Nachlaufen zum nächsten Hütchen. Öffnet Hüfte und Blick, bringt Puls und Passtempo nach oben.",
+    "procedure": "Vier Hütchen als Quadrat mit 15 m Seitenlänge. An jedem Hütchen zwei bis vier Spieler, an zwei diagonal gegenüberliegenden Hütchen je ein Ball. Der Ballführende spielt flach zum nächsten Hütchen gegen den Uhrzeigersinn und läuft seinem Pass nach. Der Empfänger nimmt den Ball mit dem hütchenfernen Fuß offen mit und spielt weiter. Nach 3 Minuten Richtungswechsel. Danach: Ball mit einem Kontakt weiterspielen.",
+    "coaching_points": [
+      "Offene Stellung: vor dem Pass schon zum nächsten Hütchen schauen",
+      "Mitnahme mit dem hütchenfernen Fuß in die Laufrichtung",
+      "Scharfer, flacher Pass auf den Fuß, nicht in den Lauf",
+      "Sofort nach dem Pass lossprinten, nicht traben"
+    ],
+    "variations": {
+      "easier": [
+        "Ball vor dem Pass stoppen",
+        "Nur ein Ball im Umlauf"
+      ],
+      "harder": [
+        "Doppelpass mit dem Empfänger vor dem Weiterspielen",
+        "Drei Bälle gleichzeitig im Umlauf",
+        "Pass über die Diagonale auf Kommando"
+      ]
+    },
+    "tags": [
+      "aktivierung",
+      "technik",
+      "passspiel",
+      "ballannahme"
+    ],
+    "animation": {
+      "version": 1,
+      "pitch": {
+        "width_m": 15,
+        "length_m": 15,
+        "markings": "none"
+      },
+      "tokens": [
+        {
+          "id": "a1",
+          "kind": "player",
+          "team": "own",
+          "label": "1"
+        },
+        {
+          "id": "a2",
+          "kind": "player",
+          "team": "own",
+          "label": "2"
+        },
+        {
+          "id": "a3",
+          "kind": "player",
+          "team": "own",
+          "label": "3"
+        },
+        {
+          "id": "a4",
+          "kind": "player",
+          "team": "own",
+          "label": "4"
+        },
+        {
+          "id": "c1",
+          "kind": "cone"
+        },
+        {
+          "id": "c2",
+          "kind": "cone"
+        },
+        {
+          "id": "c3",
+          "kind": "cone"
+        },
+        {
+          "id": "c4",
+          "kind": "cone"
+        }
+      ],
+      "keyframes": [
+        {
+          "t": 0,
+          "positions": {
+            "a1": [
+              1.5,
+              1.5
+            ],
+            "a2": [
+              13.5,
+              1.5
+            ],
+            "a3": [
+              13.5,
+              13.5
+            ],
+            "a4": [
+              1.5,
+              13.5
+            ],
+            "c1": [
+              1,
+              1
+            ],
+            "c2": [
+              14,
+              1
+            ],
+            "c3": [
+              14,
+              14
+            ],
+            "c4": [
+              1,
+              14
+            ]
+          },
+          "ball": {
+            "holder": "a1"
+          }
+        },
+        {
+          "t": 1.5,
+          "positions": {
+            "a1": [
+              8,
+              1.8
+            ]
+          },
+          "ball": {
+            "holder": "a2"
+          },
+          "transition": {
+            "pass": [
+              "a1",
+              "a2"
+            ],
+            "runs": [
+              [
+                "a1",
+                "straight"
+              ]
+            ]
+          }
+        },
+        {
+          "t": 3.0,
+          "positions": {
+            "a1": [
+              13.5,
+              1.5
+            ],
+            "a2": [
+              13.8,
+              8
+            ]
+          },
+          "ball": {
+            "holder": "a3"
+          },
+          "transition": {
+            "pass": [
+              "a2",
+              "a3"
+            ],
+            "runs": [
+              [
+                "a2",
+                "straight"
+              ]
+            ]
+          }
+        },
+        {
+          "t": 4.5,
+          "positions": {
+            "a2": [
+              13.5,
+              13.5
+            ],
+            "a3": [
+              8,
+              13.8
+            ]
+          },
+          "ball": {
+            "holder": "a4"
+          },
+          "transition": {
+            "pass": [
+              "a3",
+              "a4"
+            ],
+            "runs": [
+              [
+                "a3",
+                "straight"
+              ]
+            ]
+          }
+        },
+        {
+          "t": 6.0,
+          "positions": {
+            "a3": [
+              1.5,
+              13.5
+            ],
+            "a4": [
+              1.8,
+              8
+            ]
+          },
+          "ball": {
+            "holder": "a1"
+          },
+          "transition": {
+            "pass": [
+              "a4",
+              "a1"
+            ],
+            "runs": [
+              [
+                "a4",
+                "straight"
+              ]
+            ]
+          }
+        }
+      ],
+      "loop": true
+    },
+    "source": "seed"
+  },
+  {
+    "slug": "y-passform-mit-ablage",
+    "name": "Y-Passform mit Ablage",
+    "goal_primary": "aktivierung",
+    "goals_secondary": [
+      "technik",
+      "spielaufbau"
+    ],
+    "players_min": 8,
+    "players_max": 14,
+    "duration_min": 10,
+    "duration_max": 15,
+    "intensity": 3,
+    "field_width_m": 20,
+    "field_length_m": 25,
+    "material": [
+      {
+        "item": "huetchen",
+        "count": 5
+      },
+      {
+        "item": "baelle",
+        "count": 5
+      }
+    ],
+    "description": "Passfolge in Y-Form mit Klatschen und Weiterleiten. Simuliert den Pass in den Sechser mit Ablage auf den Achter und das Weiterspielen in die Spitze.",
+    "procedure": "Starthütchen unten, ein Hütchen 10 m davor (Sechser), darüber zwei Hütchen links und rechts versetzt (Achter) und ein Hütchen 8 m weiter oben (Stürmer). Start: Pass vom Start in den Sechser, der lässt seitlich auf den Achter klatschen, der Achter spielt in die Spitze, der Stürmer nimmt mit und dribbelt zum Start zurück. Jeder rückt eine Station weiter. Seite abwechseln.",
+    "coaching_points": [
+      "Der Sechser fordert mit der Hand und läuft dem Pass entgegen",
+      "Ablage mit einem Kontakt, sauber in den Lauf des Achters",
+      "Achter nimmt offen mit und spielt scharf in die Tiefe",
+      "Timing: der Stürmer startet erst, wenn der Achter den Ball hat"
+    ],
+    "variations": {
+      "easier": [
+        "Alle Stationen mit zwei Kontakten",
+        "Kürzere Abstände"
+      ],
+      "harder": [
+        "Sechser spielt mit einem Kontakt zurück zum Start, der dann direkt den Achter bedient",
+        "Stürmer schließt auf ein Minitor ab",
+        "Passiver Gegenspieler am Sechser"
+      ]
+    },
+    "tags": [
+      "aktivierung",
+      "technik",
+      "passspiel",
+      "dritter_mann",
+      "vororientierung"
+    ],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "rondo-4v1-aktivierung",
+    "name": "Rondo 4 gegen 1",
+    "goal_primary": "aktivierung",
+    "goals_secondary": [
+      "technik"
+    ],
+    "players_min": 5,
+    "players_max": 20,
+    "duration_min": 6,
+    "duration_max": 10,
+    "intensity": 2,
+    "field_width_m": 8,
+    "field_length_m": 8,
+    "material": [
+      {
+        "item": "huetchen",
+        "count": 4
+      },
+      {
+        "item": "baelle",
+        "count": 4
+      },
+      {
+        "item": "leibchen",
+        "count": 4
+      }
+    ],
+    "description": "Klassisches Einstiegsrondo in Gruppen von fünf. Viele Kontakte, lockerer Wettkampf, ideal in den ersten zehn Minuten.",
+    "procedure": "Quadrate mit 8 m Seitenlänge, je vier Spieler außen und einer in der Mitte. Die Außenspieler halten den Ball mit maximal zwei Kontakten, der Mittelspieler versucht den Ball zu erobern oder zu berühren. Wer den Fehlpass spielt, geht in die Mitte. Nach 3 Minuten: nur ein Kontakt erlaubt.",
+    "coaching_points": [
+      "Ball immer auf den ballfernen Fuß, damit der Mitspieler offen weiterspielen kann",
+      "Nach dem Pass sofort neue Passlinie anbieten",
+      "Mittelspieler: Passwege mit dem Körper zustellen, nicht nur dem Ball hinterherlaufen"
+    ],
+    "variations": {
+      "easier": [
+        "Größeres Quadrat",
+        "Beliebig viele Kontakte"
+      ],
+      "harder": [
+        "Ein Kontakt",
+        "Pass durch die Mitte zählt doppelt, Mittelspieler bleibt bei Ballberührung länger drin"
+      ]
+    },
+    "tags": [
+      "aktivierung",
+      "rondo",
+      "passspiel",
+      "unterzahl"
+    ],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "dribbelparcours-mit-finten",
+    "name": "Dribbelparcours mit Finten",
+    "goal_primary": "aktivierung",
+    "goals_secondary": [
+      "technik"
+    ],
+    "players_min": 6,
+    "players_max": 18,
+    "duration_min": 8,
+    "duration_max": 12,
+    "intensity": 2,
+    "field_width_m": 20,
+    "field_length_m": 30,
+    "material": [
+      {
+        "item": "huetchen",
+        "count": 12
+      },
+      {
+        "item": "stangen",
+        "count": 6
+      },
+      {
+        "item": "baelle",
+        "count": 18
+      }
+    ],
+    "description": "Jeder Spieler mit Ball durch einen Parcours aus Stangen-Slalom, Hütchentoren und einer Fintenzone. Aktiviert Fußgelenke und Ballgefühl.",
+    "procedure": "Drei Stationen hintereinander: 1. Slalom durch sechs Stangen mit engem Fuß. 2. Drei Hütchentore, durch jedes Tor mit einer Richtungsänderung (Innenseite, Außenseite, Sohle). 3. Fintenzone: an einem Hütchen eine vorgegebene Finte (Übersteiger, Schere, Körpertäuschung), danach Tempo-Dribbling zurück zum Start. Spieler starten alle 5 Sekunden.",
+    "coaching_points": [
+      "Ball nah am Fuß, viele kleine Kontakte im Slalom",
+      "Finte mit Tempowechsel: langsam rein, schnell raus",
+      "Kopf hoch nach jeder Richtungsänderung"
+    ],
+    "variations": {
+      "easier": [
+        "Weniger Stangen, größere Abstände",
+        "Finte frei wählen"
+      ],
+      "harder": [
+        "Zwei Spieler starten gleichzeitig als Rennen",
+        "Passiver Verteidiger in der Fintenzone",
+        "Nur mit dem schwachen Fuß"
+      ]
+    },
+    "tags": [
+      "aktivierung",
+      "technik",
+      "dribbling",
+      "isoliert"
+    ],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "passen-in-dreiecken-mit-positionswechsel",
+    "name": "Passen in Dreiecken mit Positionswechsel",
+    "goal_primary": "aktivierung",
+    "goals_secondary": [
+      "technik",
+      "positionsspiel"
+    ],
+    "players_min": 6,
+    "players_max": 18,
+    "duration_min": 8,
+    "duration_max": 12,
+    "intensity": 2,
+    "field_width_m": 12,
+    "field_length_m": 12,
+    "material": [
+      {
+        "item": "huetchen",
+        "count": 3
+      },
+      {
+        "item": "baelle",
+        "count": 2
+      }
+    ],
+    "description": "Drei Spieler passen im Dreieck und wechseln nach jedem Pass die Position. Schult das Anbieten im Dreieck als Grundlage jedes Positionsspiels.",
+    "procedure": "Dreieck mit 10 m Seitenlänge, je ein Spieler an einem Hütchen. Spieler A passt zu B und läuft auf die Position von B. B nimmt offen mit, passt zu C und läuft auf die Position von C. So weiter. Nach 3 Minuten Richtungswechsel, danach: Pass, Rückpass, Positionswechsel.",
+    "coaching_points": [
+      "Vor der Ballannahme in offener Stellung stehen, beide Mitspieler im Blick",
+      "Erster Kontakt in die Passrichtung",
+      "Laufweg erst starten, wenn der Ball unterwegs ist"
+    ],
+    "variations": {
+      "easier": [
+        "Zwei Kontakte Pflicht",
+        "Kein Positionswechsel"
+      ],
+      "harder": [
+        "Ein Kontakt",
+        "Zwei Bälle im Dreieck",
+        "Sechs Spieler, zwei Dreiecke überlagert, Wechsel zwischen den Dreiecken"
+      ]
+    },
+    "tags": [
+      "aktivierung",
+      "technik",
+      "passspiel",
+      "ballannahme",
+      "vororientierung"
+    ],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "handball-mit-kopfballtor",
+    "name": "Handball mit Kopfballtor",
+    "goal_primary": "aktivierung",
+    "goals_secondary": [
+      "spielform"
+    ],
+    "players_min": 8,
+    "players_max": 16,
+    "duration_min": 8,
+    "duration_max": 12,
+    "intensity": 3,
+    "field_width_m": 25,
+    "field_length_m": 35,
+    "material": [
+      {
+        "item": "huetchen",
+        "count": 4
+      },
+      {
+        "item": "baelle",
+        "count": 2
+      },
+      {
+        "item": "leibchen",
+        "count": 8
+      },
+      {
+        "item": "minitore",
+        "count": 2
+      }
+    ],
+    "description": "Zwei Teams spielen Handball, Tore zählen nur per Kopf nach Zuwurf. Lockere Aktivierung mit viel Laufarbeit und Kommunikation.",
+    "procedure": "Feld 25 x 35 m mit zwei Minitoren. Der Ball wird mit der Hand geworfen, mit dem Ball in der Hand sind maximal drei Schritte erlaubt. Der Gegner darf den Ball nur abfangen, nicht aus der Hand nehmen. Tor nur, wenn ein Mitspieler den Zuwurf per Kopf ins Tor lenkt. Fällt der Ball auf den Boden, wechselt der Ballbesitz.",
+    "coaching_points": [
+      "Ständig in Bewegung, Passwege durch Laufwege öffnen",
+      "Kommunikation: Zuwurf mit Namen ansagen",
+      "Kopfball aus dem Sprung, Augen offen"
+    ],
+    "variations": {
+      "easier": [
+        "Tor auch per Volley erlaubt",
+        "Fünf Schritte erlaubt"
+      ],
+      "harder": [
+        "Ball darf nur nach vorne geworfen werden",
+        "Nach fünf Pässen in Folge zählt das Tor doppelt"
+      ]
+    },
+    "tags": [
+      "aktivierung",
+      "spielform_klein",
+      "kopfball",
+      "wettkampf"
+    ],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "koordinationsleiter-mit-pass",
+    "name": "Koordinationsleiter mit Pass",
+    "goal_primary": "aktivierung",
+    "goals_secondary": [
+      "technik"
+    ],
+    "players_min": 6,
+    "players_max": 16,
+    "duration_min": 8,
+    "duration_max": 12,
+    "intensity": 3,
+    "field_width_m": 15,
+    "field_length_m": 20,
+    "material": [
+      {
+        "item": "koordinationsleiter",
+        "count": 2
+      },
+      {
+        "item": "huetchen",
+        "count": 6
+      },
+      {
+        "item": "baelle",
+        "count": 4
+      }
+    ],
+    "description": "Schnelle Füße in der Leiter, danach sofort ein Pass unter Zeitdruck. Verbindet Koordination mit einer Ballaktion.",
+    "procedure": "Zwei Leitern nebeneinander. Am Ende jeder Leiter steht 8 m entfernt ein Anspieler mit Ball. Der Spieler durchläuft die Leiter mit der vorgegebenen Schrittfolge (Ein-Kontakt, Zwei-Kontakt, seitlich, Skippings), bekommt sofort nach dem letzten Feld einen Pass, spielt ihn mit einem Kontakt zurück und sprintet zum Start. Vier Durchgänge pro Schrittfolge.",
+    "coaching_points": [
+      "Frequenz vor Höhe: kleine, schnelle Schritte",
+      "Oberkörper leicht nach vorn, Arme aktiv",
+      "Der Blick geht schon in der Leiter zum Anspieler",
+      "Rückpass scharf und flach"
+    ],
+    "variations": {
+      "easier": [
+        "Ohne Ball, nur Leiter",
+        "Rückpass mit zwei Kontakten"
+      ],
+      "harder": [
+        "Anspieler wirft, Rückspiel per Kopf oder Volley",
+        "Zwei Spieler als Rennen, der Schnellere bekommt den Ball zuerst"
+      ]
+    },
+    "tags": [
+      "aktivierung",
+      "isoliert",
+      "schnelligkeit"
+    ],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "farbenpassen-im-feld",
+    "name": "Farbenpassen im Feld",
+    "goal_primary": "aktivierung",
+    "goals_secondary": [
+      "technik"
+    ],
+    "players_min": 8,
+    "players_max": 16,
+    "duration_min": 8,
+    "duration_max": 12,
+    "intensity": 2,
+    "field_width_m": 25,
+    "field_length_m": 25,
+    "material": [
+      {
+        "item": "huetchen",
+        "count": 4
+      },
+      {
+        "item": "baelle",
+        "count": 4
+      },
+      {
+        "item": "leibchen",
+        "count": 12
+      }
+    ],
+    "description": "Freies Passspiel im Feld mit Farbreihenfolge. Zwingt zur Vororientierung, weil der nächste Passempfänger vor der Annahme bekannt sein muss.",
+    "procedure": "Feld 25 x 25 m, Spieler in drei Farben (je vier Spieler). Vier Bälle im Feld. Reihenfolge: Rot spielt zu Blau, Blau zu Gelb, Gelb zu Rot. Alle Spieler bewegen sich frei. Vor jeder Annahme muss der Spieler den nächsten Passempfänger seiner Zielfarbe finden. Nach 3 Minuten Reihenfolge umdrehen.",
+    "coaching_points": [
+      "Vor der Annahme schon den nächsten Empfänger suchen",
+      "Anbieten mit Blickkontakt zur vorherigen Farbe",
+      "Freie Räume nutzen, nicht in Trauben laufen"
+    ],
+    "variations": {
+      "easier": [
+        "Zwei Farben, weniger Bälle",
+        "Kein Kontaktlimit"
+      ],
+      "harder": [
+        "Zwei Kontakte, dann ein Kontakt",
+        "Ein Ball als Störball, der jederzeit vom Trainer eingespielt wird",
+        "Zwei Bälle pro Farbe"
+      ]
+    },
+    "tags": [
+      "aktivierung",
+      "technik",
+      "passspiel",
+      "vororientierung"
+    ],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "drei-farben-ballhalten",
+    "name": "Drei-Farben-Ballhalten",
+    "goal_primary": "aktivierung",
+    "goals_secondary": [
+      "pressingresistenz",
+      "positionsspiel"
+    ],
+    "players_min": 9,
+    "players_max": 15,
+    "duration_min": 8,
+    "duration_max": 12,
+    "intensity": 3,
+    "field_width_m": 25,
+    "field_length_m": 25,
+    "material": [
+      {
+        "item": "huetchen",
+        "count": 4
+      },
+      {
+        "item": "baelle",
+        "count": 3
+      },
+      {
+        "item": "leibchen",
+        "count": 10
+      }
+    ],
+    "description": "Zwei Farben halten gegen die dritte den Ball. Wer den Fehlpass spielt, wird mit seiner Farbe zum Verteidiger. Hoher Umschaltanteil bei geringer Laufstrecke.",
+    "procedure": "Feld 25 x 25 m, drei Teams zu je 3 bis 5 Spielern. Zwei Teams spielen zusammen in Überzahl gegen das dritte Team. Verliert ein Team den Ball, wird es sofort zum verteidigenden Team, das bisher verteidigende Team spielt mit. Zählen: zehn Pässe in Folge sind ein Punkt für beide ballbesitzenden Teams.",
+    "coaching_points": [
+      "Nach Ballverlust sofort umschalten, kein Sekunde Pause",
+      "Ballbesitz: breit werden, Dreiecke bilden",
+      "Der Ballführende hat immer mindestens zwei Anspielstationen"
+    ],
+    "variations": {
+      "easier": [
+        "Größeres Feld",
+        "Beliebig viele Kontakte"
+      ],
+      "harder": [
+        "Zwei Kontakte",
+        "Pass nur zur anderen ballbesitzenden Farbe, nicht zur eigenen",
+        "Nach Ballgewinn müssen drei Pässe innerhalb der neuen Farbe folgen"
+      ]
+    },
+    "tags": [
+      "aktivierung",
+      "rondo",
+      "ballbesitz",
+      "umschalten_defensiv",
+      "ueberzahl"
+    ],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "pass-staffel-durch-huetchentore",
+    "name": "Pass-Staffel durch Hütchentore",
+    "goal_primary": "aktivierung",
+    "goals_secondary": [
+      "technik"
+    ],
+    "players_min": 6,
+    "players_max": 16,
+    "duration_min": 6,
+    "duration_max": 10,
+    "intensity": 3,
+    "field_width_m": 20,
+    "field_length_m": 25,
+    "material": [
+      {
+        "item": "huetchen",
+        "count": 16
+      },
+      {
+        "item": "baelle",
+        "count": 4
+      }
+    ],
+    "description": "Paare passen sich den Ball durch verteilte Hütchentore zu und zählen die Tore in 60 Sekunden. Wettkampf als Aktivierung mit hohem Passvolumen.",
+    "procedure": "Acht Hütchentore (2 m breit) unregelmäßig im Feld verteilt. Zweierpaare mit einem Ball. In 60 Sekunden so viele Pässe wie möglich durch verschiedene Tore spielen, ein Tor darf nicht zweimal hintereinander genutzt werden. Nach jedem Durchgang 45 Sekunden Pause, dann nächster Durchgang. Drei bis vier Durchgänge, Bestwert gewinnt.",
+    "coaching_points": [
+      "Nach dem Pass sofort zum nächsten Tor orientieren",
+      "Pässe scharf und genau, ein ungenauer Pass kostet Zeit",
+      "Absprache im Paar: wer läuft zu welchem Tor"
+    ],
+    "variations": {
+      "easier": [
+        "Breitere Tore",
+        "90 Sekunden"
+      ],
+      "harder": [
+        "Nur ein Kontakt",
+        "Dreiergruppen mit Pflicht-Reihenfolge",
+        "Nur mit dem schwachen Fuß"
+      ]
+    },
+    "tags": [
+      "aktivierung",
+      "technik",
+      "passspiel",
+      "wettkampf"
+    ],
+    "animation": null,
+    "source": "seed"
+  }
+]

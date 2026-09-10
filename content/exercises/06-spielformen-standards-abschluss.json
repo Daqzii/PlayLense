@@ -1,0 +1,389 @@
+[
+  {
+    "slug": "spielform-8v8-mit-umschaltregel",
+    "name": "Spielform 8 gegen 8 mit Umschaltregel",
+    "goal_primary": "spielform",
+    "goals_secondary": ["umschalten_offensiv", "umschalten_defensiv"],
+    "players_min": 16,
+    "players_max": 18,
+    "duration_min": 20,
+    "duration_max": 30,
+    "intensity": 4,
+    "field_width_m": 55,
+    "field_length_m": 70,
+    "material": [
+      { "item": "huetchen", "count": 6 },
+      { "item": "baelle", "count": 10 },
+      { "item": "leibchen", "count": 8 },
+      { "item": "grosstor", "count": 2 }
+    ],
+    "description": "Große Spielform mit einer Provokationsregel: ein Tor innerhalb von 10 Sekunden nach Ballgewinn zählt doppelt. Sonst freies Spiel mit Abseits.",
+    "procedure": "Feld 55 x 70 m mit zwei Großtoren, Torhütern und Abseits ab der Mittellinie. Acht gegen acht in Grundformation (z. B. 3-3-1 oder 3-2-2). Der Trainer zählt bei jedem Ballgewinn laut 10 Sekunden. Ein Tor in dieser Zeit zählt doppelt. Alle anderen Regeln wie im Spiel. Zwei Halbzeiten zu 10 bis 12 Minuten.",
+    "coaching_points": [
+      "Nach Ballgewinn: erster Blick in die Tiefe, dann erst sichern",
+      "Nach Ballverlust: Gegenpressing oder sofort Rückzug, keine Zwischenlösung",
+      "Formation halten, auch wenn die Regel zum Sprinten verführt",
+      "Torwart eröffnet schnell nach Ballgewinn, wenn ein Konter möglich ist"
+    ],
+    "variations": {
+      "easier": ["15 Sekunden", "Ohne Abseits"],
+      "harder": ["7 Sekunden", "Zwei Kontakte im eigenen Drittel", "Tor nach Konter über die Außenbahn zählt dreifach"]
+    },
+    "tags": ["spielform_gross", "umschalten_offensiv", "umschalten_defensiv", "gegenpressing", "wettkampf", "grosstor", "torwart", "provokation", "gleichzahl"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "spielform-9v9-punkte-fuer-drittel",
+    "name": "Spielform 9 gegen 9 mit Punkten für jedes Drittel",
+    "goal_primary": "spielform",
+    "goals_secondary": ["spielaufbau", "positionsspiel"],
+    "players_min": 18,
+    "players_max": 20,
+    "duration_min": 20,
+    "duration_max": 30,
+    "intensity": 4,
+    "field_width_m": 60,
+    "field_length_m": 75,
+    "material": [
+      { "item": "huetchen", "count": 10 },
+      { "item": "baelle", "count": 10 },
+      { "item": "leibchen", "count": 9 },
+      { "item": "grosstor", "count": 2 }
+    ],
+    "description": "Ein Tor zählt mehr, wenn der Angriff kontrolliert durch alle drei Drittel gespielt wurde. Belohnt den flachen Aufbau und bestraft den planlosen langen Ball.",
+    "procedure": "Feld 60 x 75 m in drei Drittel geteilt, zwei Großtore und Torhüter. Neun gegen neun. Ein Tor zählt einen Punkt. Wurde der Ball vor dem Tor in jedem Drittel mindestens zweimal gepasst (also flach durch alle Drittel aufgebaut), zählt es drei Punkte. Der Trainer oder ein Co-Trainer zählt mit. Zwei Halbzeiten.",
+    "coaching_points": [
+      "Aufbau geduldig: der Torwart und die Kette spielen flach in das erste Drittel",
+      "Im Mittelfeld schnell weiter: zwei Pässe, dann Steilpass",
+      "Im letzten Drittel Breite und Tiefe gleichzeitig anbieten",
+      "Verteidigen: den Aufbau stören, damit der Gegner den langen Ball spielen muss"
+    ],
+    "variations": {
+      "easier": ["Ein Pass pro Drittel reicht", "Ohne Abseits"],
+      "harder": ["Drei Pässe pro Drittel", "Langer Ball über ein Drittel hinweg = Ballbesitz für den Gegner", "Zwei Kontakte im mittleren Drittel"]
+    },
+    "tags": ["spielform_gross", "spielaufbau", "positionsspiel", "ballbesitz", "wettkampf", "grosstor", "torwart", "provokation", "gleichzahl"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "spielform-7v7-plus-tw-aufbauzone",
+    "name": "Spielform 7 gegen 7 mit geschützter Aufbauzone",
+    "goal_primary": "spielform",
+    "goals_secondary": ["spielaufbau", "pressing"],
+    "players_min": 16,
+    "players_max": 16,
+    "duration_min": 20,
+    "duration_max": 25,
+    "intensity": 4,
+    "field_width_m": 50,
+    "field_length_m": 65,
+    "material": [
+      { "item": "huetchen", "count": 8 },
+      { "item": "baelle", "count": 10 },
+      { "item": "leibchen", "count": 7 },
+      { "item": "grosstor", "count": 2 }
+    ],
+    "description": "In der eigenen Aufbauzone darf das Ballbesitzteam nach Torwartball fünf Sekunden ungestört aufbauen. Danach greift der Gegner an. Gibt dem Aufbau Sicherheit und dem Pressing ein klares Timing.",
+    "procedure": "Feld 50 x 65 m mit zwei Großtoren und Torhütern, Aufbauzone 18 m tief vor jedem Tor. Sieben gegen sieben. Nach jedem Torwartball zählt der Trainer laut fünf Sekunden, in denen der Gegner die Aufbauzone nicht betreten darf. Danach freies Spiel. Verlässt der Ball die Aufbauzone vor Ablauf der Zeit, ist das Spiel sofort frei.",
+    "coaching_points": [
+      "Die fünf Sekunden nutzen, um die Struktur herzustellen: Kette breit, Sechser zeigen sich",
+      "Nicht warten bis der Gegner kommt: den Ball vorher aus der Zone spielen",
+      "Pressing: an der Zonengrenze stehen und beim Kommando gemeinsam starten",
+      "Bei Ballverlust in der Aufbauzone: sofort Gegenpressing, die Zone ist sonst offen"
+    ],
+    "variations": {
+      "easier": ["Acht Sekunden", "Zone tiefer"],
+      "harder": ["Drei Sekunden", "Zwei Gegner dürfen in der Zone stehen, ohne zu pressen", "Zwei Kontakte in der Zone"]
+    },
+    "tags": ["spielform_gross", "spielaufbau", "pressing", "pressingausloeser", "grosstor", "torwart", "provokation", "gleichzahl"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "standards-ecken-defensiv-organisation",
+    "name": "Ecken defensiv: Organisation und Zuordnung",
+    "goal_primary": "standards_defensiv",
+    "goals_secondary": ["kompaktheit", "umschalten_offensiv"],
+    "players_min": 14,
+    "players_max": 20,
+    "duration_min": 15,
+    "duration_max": 20,
+    "intensity": 3,
+    "field_width_m": 50,
+    "field_length_m": 40,
+    "material": [
+      { "item": "huetchen", "count": 6 },
+      { "item": "baelle", "count": 10 },
+      { "item": "leibchen", "count": 10 },
+      { "item": "grosstor", "count": 1 }
+    ],
+    "description": "Feste Organisation bei gegnerischen Ecken: wer steht am Pfosten, wer deckt im Raum, wer übernimmt Mann, wer bleibt für den Konter vorn. Zuerst als Schablone, dann live mit Kontermöglichkeit.",
+    "procedure": "Halbfeld mit Großtor und Torwart. Teil 1 (5 Minuten): Aufstellung ohne Gegner durchgehen und jedem Spieler seine Rolle geben (z. B. zwei am Pfosten oder einer, drei Raumdecker auf Fünferhöhe, vier Manndecker, ein Spieler an der Strafraumkante, ein Stürmer als Konteranspielstation). Teil 2 (10 Minuten): Gegner schlägt Ecken mit verschiedenen Varianten (kurz, lang, zweiter Pfosten, Rückraum). Nach Ballgewinn kontert die verteidigende Mannschaft auf zwei Minitore an der Mittellinie.",
+    "coaching_points": [
+      "Raumdecker: Ballblick, Absprung zum Ball, nicht warten",
+      "Manndecker: Kontakt zum Gegner, zwischen Gegner und Tor, beim Schlag den Gegner anlaufen lassen",
+      "Strafraumkante: Rückraumschuss verhindern und den Konter einleiten",
+      "Torwart kommandiert: Raus oder Bleiben, alle hören darauf",
+      "Erster Kontakt nach Ballgewinn: raus aus dem Strafraum, nie quer"
+    ],
+    "variations": {
+      "easier": ["Ecken nur lang auf den ersten Pfosten", "Kein Konter"],
+      "harder": ["Gegner spielt kurze Ecken mit Überzahl", "Zwei Angreifer blocken die Raumdecker", "Nach der Ecke folgt ein zweiter Ball vom Trainer in den Strafraum"]
+    },
+    "tags": ["standardsituation", "standards_defensiv", "kopfball", "kompaktheit", "umschalten_offensiv", "grosstor", "torwart"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "standards-ecken-offensiv-laufwege-varianten",
+    "name": "Ecken offensiv: Laufwege und Varianten",
+    "goal_primary": "standards_offensiv",
+    "goals_secondary": ["torabschluss", "technik"],
+    "players_min": 10,
+    "players_max": 18,
+    "duration_min": 15,
+    "duration_max": 20,
+    "intensity": 3,
+    "field_width_m": 50,
+    "field_length_m": 40,
+    "material": [
+      { "item": "huetchen", "count": 6 },
+      { "item": "baelle", "count": 12 },
+      { "item": "leibchen", "count": 6 },
+      { "item": "grosstor", "count": 1 }
+    ],
+    "description": "Drei eingeübte Eckballvarianten mit festen Laufwegen: Block und Lauf zum ersten Pfosten, Sammellauf zum zweiten Pfosten, kurze Ecke mit Rückraum. Erst ohne, dann gegen passive und aktive Verteidiger.",
+    "procedure": "Halbfeld mit Großtor und Torwart. Variante A: vier Angreifer starten aus einer Traube an der Strafraumkante, einer blockt den ersten Verteidiger, der Kopfballstärkste läuft zum ersten Pfosten, zwei zum zweiten. Variante B: alle starten zum ersten Pfosten, der Ball fliegt auf den zweiten, ein Spieler löst sich spät dorthin. Variante C: kurze Ecke, Rückpass zum Schützen, Flanke in den Rückraum an die Strafraumkante. Jede Variante 5 Mal ohne Gegner, dann gegen passive, dann gegen aktive Verteidiger. Beide Seiten.",
+    "coaching_points": [
+      "Start gemeinsam, erst mit dem Anlauf des Schützen",
+      "Der Blocker steht sauber, ohne Foul, und macht den Weg frei",
+      "Schütze: Ball mit Tempo und Kurve in die Zone zwischen Fünfer und Elfmeterpunkt",
+      "Zwei Spieler bleiben als Absicherung an der Mittellinie und außerhalb des Strafraums"
+    ],
+    "variations": {
+      "easier": ["Nur Variante A", "Keine Verteidiger"],
+      "harder": ["Verteidiger kennen die Variante nicht, Trainer sagt sie leise an", "Nach der Ecke folgt sofort ein Konter des Gegners auf zwei Minitore", "Signal vom Schützen legt die Variante fest"]
+    },
+    "tags": ["standardsituation", "standards_offensiv", "kopfball", "torabschluss", "strafraumbesetzung", "grosstor", "torwart"],
+    "animation": {
+      "version": 1,
+      "pitch": { "width_m": 50, "length_m": 40, "markings": "box" },
+      "tokens": [
+        { "id": "sch", "kind": "player", "team": "own", "label": "10" },
+        { "id": "bl", "kind": "player", "team": "own", "label": "6" },
+        { "id": "k1", "kind": "player", "team": "own", "label": "5" },
+        { "id": "k2", "kind": "player", "team": "own", "label": "4" },
+        { "id": "k3", "kind": "player", "team": "own", "label": "9" },
+        { "id": "rr", "kind": "player", "team": "own", "label": "8" },
+        { "id": "v1", "kind": "player", "team": "opp", "label": "" },
+        { "id": "v2", "kind": "player", "team": "opp", "label": "" },
+        { "id": "v3", "kind": "player", "team": "opp", "label": "" },
+        { "id": "tw", "kind": "player", "team": "opp", "label": "TW" },
+        { "id": "g1", "kind": "goal" }
+      ],
+      "keyframes": [
+        { "t": 0, "positions": { "g1": [25, 40], "tw": [25, 39], "sch": [49.5, 39.5], "bl": [24, 26], "k1": [22, 25], "k2": [27, 25], "k3": [30, 26], "rr": [25, 18], "v1": [22, 35], "v2": [27, 35], "v3": [32, 34] }, "ball": { "holder": "sch" } },
+        { "t": 1.5, "positions": { "bl": [23, 33], "k1": [25, 31], "k2": [27, 30], "k3": [31, 30] }, "ball": { "holder": "sch" }, "transition": { "runs": [["bl", "straight"], ["k1", "straight"], ["k2", "straight"], ["k3", "straight"]] } },
+        { "t": 3.0, "positions": { "bl": [22, 35], "k1": [30, 37], "k2": [21, 37], "k3": [18, 36], "rr": [25, 24], "v2": [28, 36] }, "ball": { "holder": "k1" }, "transition": { "pass": ["sch", "k1"], "runs": [["k1", "curve"], ["k2", "curve"], ["k3", "curve"], ["rr", "straight"]] } },
+        { "t": 3.8, "positions": { "k1": [30, 37] }, "ball": { "at_m": [27, 39.5] }, "transition": { "pass": ["k1", "g1"] } }
+      ],
+      "loop": true
+    },
+    "source": "seed"
+  },
+  {
+    "slug": "standards-freistoss-defensiv-mauer-restraum",
+    "name": "Freistöße defensiv: Mauer und Restraum",
+    "goal_primary": "standards_defensiv",
+    "goals_secondary": ["kompaktheit"],
+    "players_min": 12,
+    "players_max": 20,
+    "duration_min": 12,
+    "duration_max": 18,
+    "intensity": 2,
+    "field_width_m": 50,
+    "field_length_m": 40,
+    "material": [
+      { "item": "huetchen", "count": 6 },
+      { "item": "baelle", "count": 10 },
+      { "item": "leibchen", "count": 8 },
+      { "item": "grosstor", "count": 1 },
+      { "item": "dummies", "count": 4 }
+    ],
+    "description": "Organisation bei direkten und indirekten Freistößen in Tornähe: Mauerbildung, Anzahl in der Mauer, Abwehrlinie, Zuordnung im Restraum und Verhalten bei Flanke.",
+    "procedure": "Halbfeld mit Großtor und Torwart. Freistoßpositionen zentral 20 m, halblinks 25 m, seitlich 30 m. Für jede Position wird die Organisation festgelegt: Mauer (vier zentral, drei halblinks, zwei seitlich), Abwehrlinie auf Höhe der Mauer, Raumdecker im Fünfer, ein Spieler am kurzen Pfosten bei seitlichen Freistößen. Der Torwart stellt die Mauer. Danach schießt der Gegner zehn Freistöße pro Position mit verschiedenen Varianten (direkt, Flanke, verlegt).",
+    "coaching_points": [
+      "Torwart stellt die Mauer, der Außenspieler der Mauer deckt den kurzen Pfosten",
+      "Abwehrlinie auf Mauerhöhe, beim Schlag gemeinsam herausrücken (Abseits)",
+      "Mauer springt nicht auseinander, Hände am Körper",
+      "Nach dem Schuss oder der Flanke: sofort zum zweiten Ball"
+    ],
+    "variations": {
+      "easier": ["Nur zentrale Freistöße", "Mauer aus Dummies"],
+      "harder": ["Gegner spielt verlegte Freistöße mit zwei Schützen", "Nach dem Freistoß sofort Konter auf zwei Minitore", "Indirekte Freistöße im Strafraum"]
+    },
+    "tags": ["standardsituation", "standards_defensiv", "kompaktheit", "grosstor", "torwart", "isoliert"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "zweite-baelle-6v6-langer-ball",
+    "name": "Zweite Bälle 6 gegen 6 nach langem Ball",
+    "goal_primary": "zweite_baelle",
+    "goals_secondary": ["kompaktheit", "umschalten_offensiv"],
+    "players_min": 12,
+    "players_max": 14,
+    "duration_min": 15,
+    "duration_max": 20,
+    "intensity": 4,
+    "field_width_m": 40,
+    "field_length_m": 50,
+    "material": [
+      { "item": "huetchen", "count": 8 },
+      { "item": "baelle", "count": 12 },
+      { "item": "leibchen", "count": 6 },
+      { "item": "grosstor", "count": 2 }
+    ],
+    "description": "Jeder Angriff startet mit einem langen Ball des Torwarts in die Mittelzone. Beide Teams kämpfen um den zweiten Ball, das Team mit dem Ball greift an. Typische A-Klasse-Situation gezielt trainiert.",
+    "procedure": "Feld 40 x 50 m mit zwei Großtoren und Torhütern, Mittelzone 20 m markiert. Sechs gegen sechs. Der Torwart schlägt den Ball lang in die Mittelzone, ein Stürmer jedes Teams darf den Kopfball spielen, alle anderen stehen um die Zone und sichern den zweiten Ball. Wer ihn gewinnt, greift direkt an. Nach Tor oder Aus schlägt der andere Torwart. Punkte für Tore, Zusatzpunkt für jeden gewonnenen zweiten Ball.",
+    "coaching_points": [
+      "Beim Kopfballduell nicht zuschauen: alle schließen den Raum um die Landestelle",
+      "Mittelfeld steht gestaffelt vor und hinter dem Kopfballspieler, 8 bis 10 m Abstand",
+      "Nach Ballgewinn: sofort in die Tiefe, der Gegner ist unsortiert",
+      "Bei Verlust des zweiten Balls: kompakt fallen, nicht einzeln nachjagen"
+    ],
+    "variations": {
+      "easier": ["Der Ball wird vom Trainer eingeworfen", "Kopfballspieler darf ablegen"],
+      "harder": ["Zwei Kontakte nach dem zweiten Ball", "Zeitlimit 10 Sekunden für den Angriff", "Sieben gegen sieben"]
+    },
+    "tags": ["spielform_klein", "zweite_baelle", "kompaktheit", "kopfball", "zweikampf", "umschalten_offensiv", "grosstor", "torwart", "gleichzahl"],
+    "animation": {
+      "version": 1,
+      "pitch": { "width_m": 40, "length_m": 50, "markings": "half" },
+      "tokens": [
+        { "id": "tw", "kind": "player", "team": "own", "label": "TW" },
+        { "id": "st", "kind": "player", "team": "own", "label": "9" },
+        { "id": "a1", "kind": "player", "team": "own", "label": "6" },
+        { "id": "a2", "kind": "player", "team": "own", "label": "8" },
+        { "id": "a3", "kind": "player", "team": "own", "label": "7" },
+        { "id": "a4", "kind": "player", "team": "own", "label": "11" },
+        { "id": "a5", "kind": "player", "team": "own", "label": "4" },
+        { "id": "b1", "kind": "player", "team": "opp", "label": "" },
+        { "id": "b2", "kind": "player", "team": "opp", "label": "" },
+        { "id": "b3", "kind": "player", "team": "opp", "label": "" },
+        { "id": "b4", "kind": "player", "team": "opp", "label": "" },
+        { "id": "b5", "kind": "player", "team": "opp", "label": "" },
+        { "id": "b6", "kind": "player", "team": "opp", "label": "" },
+        { "id": "g1", "kind": "goal" },
+        { "id": "g2", "kind": "goal" }
+      ],
+      "static": [ { "kind": "zone", "rect_m": [0, 15, 40, 20], "color": "blue", "opacity": 0.1 } ],
+      "keyframes": [
+        { "t": 0, "positions": { "g1": [20, 0], "g2": [20, 50], "tw": [20, 2], "st": [20, 26], "a1": [14, 18], "a2": [26, 18], "a3": [8, 24], "a4": [32, 24], "a5": [20, 12], "b1": [20, 29], "b2": [12, 34], "b3": [28, 34], "b4": [20, 40], "b5": [8, 30], "b6": [32, 30] }, "ball": { "holder": "tw" } },
+        { "t": 2.0, "positions": { "a1": [16, 22], "a2": [24, 22], "a3": [11, 26], "a4": [29, 26], "b2": [15, 31], "b3": [25, 31] }, "ball": { "at_m": [20, 28] }, "transition": { "pass": ["tw", "st"], "runs": [["a1", "straight"], ["a2", "straight"], ["a3", "straight"], ["a4", "straight"]] } },
+        { "t": 3.0, "positions": { "st": [20, 27], "b1": [20, 29] }, "ball": { "at_m": [24, 23] }, "transition": { "pass": ["st", "a2"] } },
+        { "t": 4.0, "positions": { "a2": [24, 23], "a4": [31, 34], "a3": [12, 33] }, "ball": { "holder": "a2" }, "transition": { "runs": [["a4", "straight"], ["a3", "straight"]] } },
+        { "t": 5.5, "positions": { "a4": [33, 42], "a2": [25, 27] }, "ball": { "holder": "a4" }, "transition": { "pass": ["a2", "a4"] } }
+      ],
+      "loop": true
+    },
+    "source": "seed"
+  },
+  {
+    "slug": "abschluss-cooldown-passen-und-auslaufen",
+    "name": "Abschluss: lockeres Passen und Auslaufen",
+    "goal_primary": "spielform",
+    "goals_secondary": ["technik"],
+    "players_min": 4,
+    "players_max": 20,
+    "duration_min": 5,
+    "duration_max": 8,
+    "intensity": 1,
+    "field_width_m": 20,
+    "field_length_m": 30,
+    "material": [
+      { "item": "baelle", "count": 6 }
+    ],
+    "description": "Lockeres Passen in Dreier- oder Vierergruppen im Gehen und Traben, danach zwei Runden Auslaufen und Dehnen. Bringt den Puls runter und schließt die Einheit sauber ab.",
+    "procedure": "Gruppen zu drei oder vier Spielern mit einem Ball bewegen sich im Traben über das Feld und passen sich locker zu. Nach 3 Minuten Ball weglegen, zwei Runden um das Feld locker traben, dann gemeinsames Dehnen (Oberschenkel vorn und hinten, Waden, Hüfte, Adduktoren) je 20 Sekunden. Abschlussbesprechung im Kreis.",
+    "coaching_points": [
+      "Puls bewusst runterfahren, kein Wettkampf mehr",
+      "Kurzes Feedback zur Einheit: Was hat funktioniert, was nehmen wir mit?",
+      "Ausblick auf das nächste Training oder Spiel"
+    ],
+    "variations": {
+      "easier": ["Nur Auslaufen ohne Ball"],
+      "harder": ["Jonglieren in der Gruppe als lockerer Abschluss"]
+    },
+    "tags": ["abschluss", "technik", "passspiel"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "abschluss-lattenschiessen",
+    "name": "Abschluss: Lattenschießen",
+    "goal_primary": "spielform",
+    "goals_secondary": ["technik", "torabschluss"],
+    "players_min": 4,
+    "players_max": 20,
+    "duration_min": 5,
+    "duration_max": 8,
+    "intensity": 1,
+    "field_width_m": 30,
+    "field_length_m": 25,
+    "material": [
+      { "item": "baelle", "count": 10 },
+      { "item": "grosstor", "count": 1 }
+    ],
+    "description": "Klassischer lockerer Abschluss: Wer trifft aus 16 Metern die Latte? Danach Auslaufen. Sorgt für gute Laune am Ende der Einheit.",
+    "procedure": "Alle Spieler stehen an der Strafraumlinie mit Bällen. Jeder schießt nacheinander auf die Latte. Latte getroffen: ein Punkt. Drei Runden, danach Auslaufen. Verlierer räumen das Material auf. Optional als Team-Wettkampf.",
+    "coaching_points": [
+      "Lockere Technik, Spaß steht im Vordergrund",
+      "Danach unbedingt zwei Minuten locker auslaufen",
+      "Kurzes Feedback zur Einheit einbauen"
+    ],
+    "variations": {
+      "easier": ["Pfosten zählt auch"],
+      "harder": ["Aus 20 m", "Nur schwacher Fuß", "Volley nach eigenem Hochwerfen"]
+    },
+    "tags": ["abschluss", "technik", "torabschluss", "wettkampf", "grosstor"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "spielform-5v5-plus-tw-kleinfeld-intensiv",
+    "name": "Kleinfeld 5 gegen 5 plus Torhüter, intensiv",
+    "goal_primary": "ausdauer",
+    "goals_secondary": ["spielform", "umschalten_defensiv"],
+    "players_min": 12,
+    "players_max": 16,
+    "duration_min": 15,
+    "duration_max": 20,
+    "intensity": 5,
+    "field_width_m": 30,
+    "field_length_m": 40,
+    "material": [
+      { "item": "huetchen", "count": 4 },
+      { "item": "baelle", "count": 10 },
+      { "item": "leibchen", "count": 10 },
+      { "item": "grosstor", "count": 2 }
+    ],
+    "description": "Kleinfeldspiel in Intervallen: 3 Minuten Vollgas, 90 Sekunden Pause. Fußballspezifische Ausdauer mit hoher Aktionsdichte statt Laufrunden.",
+    "procedure": "Feld 30 x 40 m mit zwei Großtoren und Torhütern, viele Bälle an den Toren und Seiten. Fünf gegen fünf, freies Spiel ohne Abseits. Der Ball wird nach jedem Aus sofort vom Torwart oder vom Trainer neu eingespielt, keine Unterbrechung. Vier bis fünf Intervalle zu 3 Minuten, dazwischen 90 Sekunden Pause. Bei 15 oder mehr Spielern rotiert ein drittes Team.",
+    "coaching_points": [
+      "Hohe Intensität ist das Ziel: Sprinten zum Ball, sofort umschalten",
+      "Trotz Belastung: Grundordnung halten, kein wildes Laufen",
+      "In der Pause aktiv bleiben, gehen statt stehen",
+      "Trainer hält das Tempo hoch durch schnelle neue Bälle"
+    ],
+    "variations": {
+      "easier": ["2 Minuten Intervalle", "Größeres Feld"],
+      "harder": ["4 Minuten Intervalle", "Vier gegen vier", "Zwei Kontakte"]
+    },
+    "tags": ["spielform_klein", "ausdauer", "umschalten_defensiv", "umschalten_offensiv", "wettkampf", "grosstor", "torwart", "gleichzahl"],
+    "animation": null,
+    "source": "seed"
+  }
+]

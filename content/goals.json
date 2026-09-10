@@ -1,0 +1,25 @@
+{
+  "_comment": "Trainingsziele. goal_primary und goals_secondary einer Übung müssen hier vorkommen. default_tags verbinden Ziel und Übungs-Tags im Generator.",
+  "goals": [
+    { "key": "aktivierung",            "label": "Aktivierung",                 "default_tags": ["aktivierung", "rondo", "technik"] },
+    { "key": "spielaufbau",            "label": "Spielaufbau",                 "default_tags": ["spielaufbau", "positionsspiel", "dritter_mann", "passspiel"] },
+    { "key": "pressingresistenz",      "label": "Pressingresistenz",           "default_tags": ["rondo", "positionsspiel", "unterzahl", "vororientierung", "spielaufbau"] },
+    { "key": "kompaktheit",            "label": "Kompaktheit",                 "default_tags": ["kompaktheit", "verschieben", "zweite_baelle"] },
+    { "key": "positionsspiel",         "label": "Positionsspiel",              "default_tags": ["positionsspiel", "ueberzahl", "dritter_mann", "ballbesitz"] },
+    { "key": "restverteidigung",       "label": "Restverteidigung",            "default_tags": ["restverteidigung", "umschalten_defensiv", "gegenpressing"] },
+    { "key": "umschalten_defensiv",    "label": "Umschalten defensiv",         "default_tags": ["umschalten_defensiv", "gegenpressing", "restverteidigung"] },
+    { "key": "umschalten_offensiv",    "label": "Umschalten offensiv",         "default_tags": ["umschalten_offensiv", "konter", "tiefenlaeufe"] },
+    { "key": "verschieben",            "label": "Verschieben und Seitenverteidigung", "default_tags": ["verschieben", "kompaktheit", "fluegelspiel"] },
+    { "key": "pressing",               "label": "Pressing",                    "default_tags": ["pressing", "pressingausloeser", "gegenpressing"] },
+    { "key": "torabschluss",           "label": "Torabschluss",                "default_tags": ["torabschluss", "strafraumbesetzung", "entscheidungsverhalten"] },
+    { "key": "entscheidungsverhalten", "label": "Entscheidungsverhalten",      "default_tags": ["entscheidungsverhalten", "ueberzahl", "spielform_klein"] },
+    { "key": "angriffsaufbau",         "label": "Angriffsaufbau und Breite",   "default_tags": ["breite", "fluegelspiel", "strafraumbesetzung", "passspiel"] },
+    { "key": "tiefenlaeufe",           "label": "Tiefe und Tiefenläufe",       "default_tags": ["tiefenlaeufe", "umschalten_offensiv", "konter"] },
+    { "key": "standards_defensiv",     "label": "Standards defensiv",          "default_tags": ["standardsituation", "standards_defensiv", "kopfball"] },
+    { "key": "standards_offensiv",     "label": "Standards offensiv",          "default_tags": ["standardsituation", "standards_offensiv", "kopfball"] },
+    { "key": "zweite_baelle",          "label": "Zweite Bälle",                "default_tags": ["zweite_baelle", "kompaktheit", "zweikampf"] },
+    { "key": "technik",                "label": "Technik",                     "default_tags": ["technik", "passspiel", "isoliert"] },
+    { "key": "ausdauer",               "label": "Ausdauer",                    "default_tags": ["ausdauer", "spielform_klein", "wettkampf"] },
+    { "key": "spielform",              "label": "Spielform",                   "default_tags": ["spielform_gross", "spielform_klein", "wettkampf"] }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "mein-slug",
+  "name": "Name der Übung",
+  "goal_primary": "spielaufbau",
+  "goals_secondary": [],
+  "players_min": 8,
+  "players_max": 12,
+  "duration_min": 10,
+  "duration_max": 20,
+  "intensity": 3,
+  "field_width_m": 30,
+  "field_length_m": 30,
+  "material": [
+    { "item": "huetchen", "count": 4 },
+    { "item": "baelle", "count": 6 }
+  ],
+  "description": "Ein bis zwei Sätze: Was wird trainiert und in welcher Form?",
+  "procedure": "Aufbau und Ablauf Schritt für Schritt: Feld, Aufstellung, Regeln, Wechsel, Wertung.",
+  "coaching_points": [
+    "Erster Coaching Point",
+    "Zweiter Coaching Point",
+    "Dritter Coaching Point"
+  ],
+  "variations": {
+    "easier": ["Wie wird es leichter?"],
+    "harder": ["Wie wird es schwerer?"]
+  },
+  "tags": ["positionsspiel", "spielaufbau"],
+  "animation": null,
+  "source": "eigene"
+}

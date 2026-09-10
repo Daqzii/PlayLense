@@ -1,0 +1,395 @@
+[
+  {
+    "slug": "aufbau-6v4-gegen-pressing",
+    "name": "Spielaufbau 6 gegen 4 gegen Pressing",
+    "goal_primary": "spielaufbau",
+    "goals_secondary": ["pressingresistenz", "positionsspiel"],
+    "players_min": 10,
+    "players_max": 14,
+    "duration_min": 15,
+    "duration_max": 25,
+    "intensity": 4,
+    "field_width_m": 35,
+    "field_length_m": 30,
+    "material": [
+      { "item": "huetchen", "count": 8 },
+      { "item": "baelle", "count": 6 },
+      { "item": "leibchen", "count": 4 },
+      { "item": "minitore", "count": 2 }
+    ],
+    "description": "Vier Verteidiger plus zwei Sechser bauen gegen vier pressende Gegner auf. Ziel ist der kontrollierte Pass über die Mittellinie in eine Zielzone. Die Kernübung gegen Ballverluste im eigenen Drittel.",
+    "procedure": "Feld 35 x 30 m. Grundlinie mit zwei Minitoren für die Pressenden. Team A: zwei Innenverteidiger, zwei Außenverteidiger, zwei Sechser. Team B: vier Pressende (zwei Stürmer, zwei Mittelfeldspieler). Start immer beim Innenverteidiger. Team A punktet, wenn ein Spieler den Ball kontrolliert über die gegenüberliegende Linie dribbelt oder ein Pass dort angenommen wird. Team B punktet mit Ballgewinn und Abschluss auf eines der Minitore innerhalb von 8 Sekunden. Nach jedem Punkt Neustart beim Innenverteidiger.",
+    "coaching_points": [
+      "Innenverteidiger breit, Außenverteidiger hoch und breit, Sechser gestaffelt",
+      "Der ballnahe Sechser bietet sich zwischen den Stürmern an, der ballferne schafft Tiefe",
+      "Gegner binden: erst andribbeln, dann passen",
+      "Rückpass zum anderen Innenverteidiger ist keine Niederlage, sondern Verlagerung",
+      "Nach dem Pass durch das Pressing sofort nachrücken"
+    ],
+    "variations": {
+      "easier": ["Pressende dürfen erst nach dem ersten Pass starten", "Drei Pressende"],
+      "harder": ["Zwei Kontakte für Team A", "Fünf Pressende", "Torwart als zusätzliche Anspielstation, aber nur ein Kontakt für ihn"]
+    },
+    "tags": ["positionsspiel", "spielaufbau", "pressingresistenz", "ueberzahl", "dritter_mann", "minitore"],
+    "animation": {
+      "version": 1,
+      "pitch": { "width_m": 35, "length_m": 30, "markings": "none" },
+      "tokens": [
+        { "id": "liv", "kind": "player", "team": "own", "label": "4" },
+        { "id": "riv", "kind": "player", "team": "own", "label": "5" },
+        { "id": "lv", "kind": "player", "team": "own", "label": "3" },
+        { "id": "rv", "kind": "player", "team": "own", "label": "2" },
+        { "id": "s6", "kind": "player", "team": "own", "label": "6" },
+        { "id": "s8", "kind": "player", "team": "own", "label": "8" },
+        { "id": "b1", "kind": "player", "team": "opp", "label": "" },
+        { "id": "b2", "kind": "player", "team": "opp", "label": "" },
+        { "id": "b3", "kind": "player", "team": "opp", "label": "" },
+        { "id": "b4", "kind": "player", "team": "opp", "label": "" },
+        { "id": "g1", "kind": "minigoal" },
+        { "id": "g2", "kind": "minigoal" }
+      ],
+      "static": [ { "kind": "line", "from_m": [0, 30], "to_m": [35, 30], "style": "dashed" } ],
+      "keyframes": [
+        { "t": 0, "positions": { "g1": [10, 0], "g2": [25, 0], "liv": [12, 4], "riv": [23, 4], "lv": [3, 12], "rv": [32, 12], "s6": [14, 13], "s8": [22, 16], "b1": [14, 10], "b2": [21, 10], "b3": [9, 19], "b4": [26, 19] }, "ball": { "holder": "liv" } },
+        { "t": 1.5, "positions": { "liv": [13, 7], "b1": [13, 8], "s6": [10, 14] }, "ball": { "holder": "liv" }, "transition": { "dribble": "liv", "runs": [["s6", "straight"]] } },
+        { "t": 3.0, "positions": { "b2": [18, 9], "b3": [8, 16] }, "ball": { "holder": "lv" }, "transition": { "pass": ["liv", "lv"] } },
+        { "t": 4.5, "positions": { "b3": [5, 14], "s6": [11, 17], "s8": [20, 21] }, "ball": { "holder": "s6" }, "transition": { "pass": ["lv", "s6"] } },
+        { "t": 6.0, "positions": { "s8": [22, 26], "b4": [24, 22] }, "ball": { "holder": "s8" }, "transition": { "pass": ["s6", "s8"], "runs": [["s8", "straight"]] } },
+        { "t": 7.5, "positions": { "s8": [22, 31] }, "ball": { "holder": "s8" }, "transition": { "dribble": "s8" } }
+      ],
+      "loop": true
+    },
+    "source": "seed"
+  },
+  {
+    "slug": "aufbau-tw-plus-4-gegen-3",
+    "name": "Aufbau von hinten: Torwart plus 4 gegen 3",
+    "goal_primary": "spielaufbau",
+    "goals_secondary": ["pressingresistenz", "technik"],
+    "players_min": 8,
+    "players_max": 12,
+    "duration_min": 15,
+    "duration_max": 20,
+    "intensity": 4,
+    "field_width_m": 40,
+    "field_length_m": 35,
+    "material": [
+      { "item": "huetchen", "count": 6 },
+      { "item": "baelle", "count": 8 },
+      { "item": "leibchen", "count": 3 },
+      { "item": "grosstor", "count": 1 },
+      { "item": "minitore", "count": 2 }
+    ],
+    "description": "Torwart und Viererkette bauen vom Abstoß gegen drei Pressende auf. Trainiert das Einbinden des Torwarts und die erste Passlinie unter Druck.",
+    "procedure": "Halbfeld ab Großtor, 40 m breit, 35 m lang, an der Endlinie zwei Minitore. Torwart plus vier Verteidiger gegen drei Pressende. Start mit Abstoß oder Zuspiel des Torwarts. Punkt für die Aufbauer, wenn ein Pass in eine 5 m tiefe Zielzone an der Endlinie angenommen wird oder ein Spieler hineindribbelt. Pressende punkten mit Ballgewinn und Tor auf das Großtor oder ein Minitor. Der Torwart darf jederzeit als Rückpassoption genutzt werden.",
+    "coaching_points": [
+      "Innenverteidiger auf Strafraumhöhe auseinanderziehen, Außenverteidiger auf Höhe der Strafraumlinie",
+      "Torwart als Mittelpunkt: Rückpass, erste Annahme, Verlagerung",
+      "Passen auf den vom Gegner abgewandten Fuß",
+      "Lange Bälle sind erlaubt, aber nur wenn der kurze Weg wirklich zu ist"
+    ],
+    "variations": {
+      "easier": ["Zwei Pressende", "Pressende starten erst beim zweiten Pass"],
+      "harder": ["Vier Pressende", "Torwart nur mit einem Kontakt", "Zielzone nur durch Pass in den Fuß, nicht per Dribbling"]
+    },
+    "tags": ["spielform_klein", "spielaufbau", "pressingresistenz", "torwart", "ueberzahl", "grosstor"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "aufbau-ueber-dritten-mann-schablone",
+    "name": "Aufbau über den dritten Mann (Schablone)",
+    "goal_primary": "spielaufbau",
+    "goals_secondary": ["technik", "positionsspiel"],
+    "players_min": 8,
+    "players_max": 14,
+    "duration_min": 10,
+    "duration_max": 15,
+    "intensity": 2,
+    "field_width_m": 30,
+    "field_length_m": 40,
+    "material": [
+      { "item": "huetchen", "count": 8 },
+      { "item": "baelle", "count": 6 }
+    ],
+    "description": "Feste Passfolge ohne Gegner: Innenverteidiger spielt in den Sechser, der klatscht auf den anderen Innenverteidiger, der spielt hinter die erste Linie auf den Achter. Vorstufe zur Spielform.",
+    "procedure": "Positionen mit Hütchen markieren: zwei Innenverteidiger, zwei Sechser, zwei Achter, ein Stürmer. Ablauf: IV links → Sechser (Klatschen zurück) → IV rechts → steiler Pass auf den Achter, der offen mitnimmt → Stürmer (Ablage) → Achter schießt auf ein Minitor oder dribbelt über die Linie. Alle rücken eine Station weiter. Beide Seiten trainieren.",
+    "coaching_points": [
+      "Der Sechser fordert den Ball und lässt mit einem Kontakt klatschen, während der Gegner ihn anläuft",
+      "Der zweite Innenverteidiger spielt den Ball mit dem ersten Kontakt vor, kein Stoppen",
+      "Der Achter startet erst, wenn der Ball beim zweiten IV ist, dann hinter die gedachte Sturmlinie",
+      "Ablage des Stürmers in den Lauf, nicht auf den Fuß"
+    ],
+    "variations": {
+      "easier": ["Alle mit zwei Kontakten", "Ohne Ablage des Stürmers"],
+      "harder": ["Zwei passive Gegenspieler auf Höhe der Sechser", "Zeitlimit von 8 Sekunden vom ersten Pass bis zum Abschluss", "Anschließend als 7v5-Spielform mit denselben Positionen"]
+    },
+    "tags": ["isoliert", "technik", "spielaufbau", "dritter_mann", "passspiel"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "spielaufbau-8v6-mit-tiefenzone",
+    "name": "Spielaufbau 8 gegen 6 mit Tiefenzone",
+    "goal_primary": "spielaufbau",
+    "goals_secondary": ["tiefenlaeufe", "positionsspiel"],
+    "players_min": 14,
+    "players_max": 16,
+    "duration_min": 20,
+    "duration_max": 25,
+    "intensity": 4,
+    "field_width_m": 45,
+    "field_length_m": 45,
+    "material": [
+      { "item": "huetchen", "count": 10 },
+      { "item": "baelle", "count": 8 },
+      { "item": "leibchen", "count": 6 },
+      { "item": "minitore", "count": 2 }
+    ],
+    "description": "Aufbau in Überzahl gegen einen Sechserblock. Punkt gibt es nur für den angenommenen Pass in eine Tiefenzone hinter dem Block. Trainiert Geduld im Aufbau und das richtige Timing für den Pass in die Tiefe.",
+    "procedure": "Feld 45 x 45 m, an der Endlinie eine 8 m tiefe Zone. Team A mit acht Spielern (Viererkette, zwei Sechser, zwei Achter) gegen Team B mit sechs Spielern (zwei Stürmer, vier Mittelfeld). Team A punktet, wenn ein Pass in der Tiefenzone angenommen wird. Der Empfänger darf erst mit dem Pass hineinlaufen. Team B punktet mit Ballgewinn und Treffer auf eines der zwei Minitore an der Startlinie von Team A.",
+    "coaching_points": [
+      "Der Block muss durch Verlagerungen bewegt werden, dann öffnet sich die Tiefe",
+      "Achter besetzen die Halbräume hinter der Mittelfeldlinie von B",
+      "Pass in die Tiefe: scharf, flach, sobald ein Achter Blickkontakt hat",
+      "Restverteidigung: mindestens drei Spieler bleiben hinter dem Ball"
+    ],
+    "variations": {
+      "easier": ["Fünf Verteidiger", "Tiefenzone 12 m"],
+      "harder": ["Zwei Kontakte", "Ballgewinn von B zählt doppelt, wenn er im ersten Drittel von A passiert", "Team A hat 20 Sekunden pro Angriff"]
+    },
+    "tags": ["spielform_klein", "spielaufbau", "positionsspiel", "tiefenlaeufe", "ueberzahl", "minitore"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "pressing-spielform-5v5-pressingzone",
+    "name": "Pressing-Spielform 5 gegen 5 mit Pressingzone",
+    "goal_primary": "pressing",
+    "goals_secondary": ["umschalten_offensiv", "kompaktheit"],
+    "players_min": 12,
+    "players_max": 12,
+    "duration_min": 15,
+    "duration_max": 20,
+    "intensity": 5,
+    "field_width_m": 40,
+    "field_length_m": 50,
+    "material": [
+      { "item": "huetchen", "count": 8 },
+      { "item": "baelle", "count": 8 },
+      { "item": "leibchen", "count": 10 },
+      { "item": "grosstor", "count": 2 }
+    ],
+    "description": "Spielform mit Torhütern, in der Ballgewinne im gegnerischen Drittel doppelt belohnt werden. Zwingt das Team zu hohem, gemeinsamem Pressing.",
+    "procedure": "Feld 40 x 50 m mit zwei Großtoren und Torhütern, in drei Zonen geteilt. Fünf gegen fünf. Ein Tor nach Ballgewinn im gegnerischen Drittel zählt drei Punkte, nach Ballgewinn im Mittelfeld zwei, sonst einen. Der Torwart des ballbesitzenden Teams startet den Aufbau immer flach. Nach 4 Minuten Pause, vier Durchgänge.",
+    "coaching_points": [
+      "Pressing als Einheit: erster Spieler stellt den Passweg zu, zweiter attackiert",
+      "Auslöser klar benennen: Rückpass, schlechte Annahme, Pass zum Außenverteidiger",
+      "Kompakt nachschieben, kein Loch zwischen erster und zweiter Linie",
+      "Nach Ballgewinn sofort in die Tiefe schauen, das Tor ist nah"
+    ],
+    "variations": {
+      "easier": ["Torwart muss mit zwei Kontakten spielen", "Feld kürzer"],
+      "harder": ["Zeitlimit: nach Ballgewinn 6 Sekunden bis zum Abschluss", "Zwei Kontakte für das ballbesitzende Team im eigenen Drittel", "Sechs gegen sechs"]
+    },
+    "tags": ["spielform_klein", "pressing", "pressingausloeser", "umschalten_offensiv", "kompaktheit", "torwart", "grosstor", "provokation"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "pressingausloeser-rueckpass",
+    "name": "Pressingauslöser Rückpass",
+    "goal_primary": "pressing",
+    "goals_secondary": ["kompaktheit", "umschalten_offensiv"],
+    "players_min": 10,
+    "players_max": 14,
+    "duration_min": 15,
+    "duration_max": 20,
+    "intensity": 4,
+    "field_width_m": 40,
+    "field_length_m": 35,
+    "material": [
+      { "item": "huetchen", "count": 8 },
+      { "item": "baelle", "count": 8 },
+      { "item": "leibchen", "count": 6 },
+      { "item": "grosstor", "count": 1 },
+      { "item": "minitore", "count": 2 }
+    ],
+    "description": "Erst Schablone, dann Spielform: Der Rückpass des Gegners zum Innenverteidiger oder Torwart ist das Signal für die ganze Pressinglinie, gemeinsam anzulaufen.",
+    "procedure": "Teil 1 (5 Minuten): Sieben Aufbauer (TW, Viererkette, zwei Sechser) spielen sich den Ball ohne Druck zu. Vier Pressende (zwei Stürmer, zwei Achter) warten in Mittelfeldposition. Auf jeden Rückpass zum TW oder Innenverteidiger starten beide Stürmer gemeinsam: der ballnahe stellt den Weg zum anderen IV zu, der ballferne läuft den Passempfänger an. Achter rücken auf die Sechser. Teil 2 (10 Minuten): frei gespielt mit gleichen Regeln, Ballgewinn der Pressenden plus Tor innerhalb 8 Sekunden gibt zwei Punkte, Aufbauer punkten mit Pass in die Zielzone.",
+    "coaching_points": [
+      "Rückpass = Signal: alle vier starten im selben Moment",
+      "Anlaufen im Bogen, damit der Pass zur anderen Seite zu ist",
+      "Die zweite Linie rückt mit, sonst wird die erste Linie überspielt",
+      "Wer den Auslöser verpasst, bleibt hinten kompakt statt allein zu laufen"
+    ],
+    "variations": {
+      "easier": ["Aufbauer mit zwei Kontakten", "Nur Rückpass zum Torwart als Auslöser"],
+      "harder": ["Weiterer Auslöser: Pass zum Außenverteidiger", "Fünf Pressende", "Aufbauer punkten nur bei Pass in die Tiefe"]
+    },
+    "tags": ["isoliert", "spielform_klein", "pressing", "pressingausloeser", "kompaktheit", "umschalten_offensiv", "torwart"],
+    "animation": {
+      "version": 1,
+      "pitch": { "width_m": 40, "length_m": 35, "markings": "none" },
+      "tokens": [
+        { "id": "tw", "kind": "player", "team": "opp", "label": "TW" },
+        { "id": "liv", "kind": "player", "team": "opp", "label": "4" },
+        { "id": "riv", "kind": "player", "team": "opp", "label": "5" },
+        { "id": "lv", "kind": "player", "team": "opp", "label": "3" },
+        { "id": "rv", "kind": "player", "team": "opp", "label": "2" },
+        { "id": "s6", "kind": "player", "team": "opp", "label": "6" },
+        { "id": "st1", "kind": "player", "team": "own", "label": "9" },
+        { "id": "st2", "kind": "player", "team": "own", "label": "11" },
+        { "id": "m1", "kind": "player", "team": "own", "label": "8" },
+        { "id": "m2", "kind": "player", "team": "own", "label": "10" },
+        { "id": "g1", "kind": "goal" }
+      ],
+      "keyframes": [
+        { "t": 0, "positions": { "g1": [20, 0], "tw": [20, 3], "liv": [13, 8], "riv": [27, 8], "lv": [4, 15], "rv": [36, 15], "s6": [20, 16], "st1": [15, 20], "st2": [25, 20], "m1": [12, 27], "m2": [28, 27] }, "ball": { "holder": "riv" } },
+        { "t": 1.2, "positions": { "riv": [27, 8] }, "ball": { "holder": "tw" }, "transition": { "pass": ["riv", "tw"] } },
+        { "t": 3.0, "positions": { "st1": [17, 9], "st2": [24, 12], "m1": [14, 18], "m2": [24, 19] }, "ball": { "holder": "tw" }, "transition": { "runs": [["st1", "curve"], ["st2", "curve"], ["m1", "straight"], ["m2", "straight"]] } },
+        { "t": 4.2, "positions": { "st1": [14, 8], "st2": [22, 9] }, "ball": { "holder": "liv" }, "transition": { "pass": ["tw", "liv"] } },
+        { "t": 5.4, "positions": { "st1": [13, 8.5], "m1": [11, 13] }, "ball": { "holder": "st1" }, "transition": { "runs": [["st1", "straight"]] } }
+      ],
+      "loop": true
+    },
+    "source": "seed"
+  },
+  {
+    "slug": "gegenpressing-5-sekunden-regel",
+    "name": "Gegenpressing mit 5-Sekunden-Regel",
+    "goal_primary": "umschalten_defensiv",
+    "goals_secondary": ["pressing", "restverteidigung"],
+    "players_min": 12,
+    "players_max": 14,
+    "duration_min": 15,
+    "duration_max": 20,
+    "intensity": 5,
+    "field_width_m": 35,
+    "field_length_m": 40,
+    "material": [
+      { "item": "huetchen", "count": 4 },
+      { "item": "baelle", "count": 8 },
+      { "item": "leibchen", "count": 12 },
+      { "item": "minitore", "count": 4 }
+    ],
+    "description": "Sechs gegen sechs auf vier Minitore. Nach Ballverlust hat das Team fünf Sekunden Zeit, den Ball zurückzuerobern. Gelingt es, zählt der nächste Treffer doppelt.",
+    "procedure": "Feld 35 x 40 m, je zwei Minitore auf jeder Stirnseite. Sechs gegen sechs, viele Bälle am Rand. Der Trainer zählt bei jedem Ballverlust laut bis fünf. Wird der Ball innerhalb der fünf Sekunden zurückerobert, zählt ein Tor des zurückerobernden Teams in diesem Angriff doppelt. Wird der Ball nicht zurückerobert, muss das Team sich hinter die Mittellinie zurückziehen, bevor es wieder verteidigen darf.",
+    "coaching_points": [
+      "Ballverlust ist das Startsignal: der ballnächste Spieler geht sofort drauf",
+      "Die anderen schließen die Passwege, nicht alle zum Ball",
+      "Aggressiv, aber kontrolliert: Körper zwischen Ball und Tor",
+      "Nach fünf Sekunden ohne Erfolg: geordnet zurück, nicht weiterjagen"
+    ],
+    "variations": {
+      "easier": ["Acht Sekunden", "Rückzug nur bis zum eigenen Drittel"],
+      "harder": ["Drei Sekunden", "Sieben gegen sieben", "Der Rückzug muss bis zur eigenen Grundlinie erfolgen"]
+    },
+    "tags": ["spielform_klein", "gegenpressing", "umschalten_defensiv", "pressing", "minitore", "provokation", "gleichzahl"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "spielaufbau-11v8-gegen-mittelfeldpressing",
+    "name": "Spielaufbau 11 gegen 8 gegen Mittelfeldpressing",
+    "goal_primary": "spielaufbau",
+    "goals_secondary": ["positionsspiel", "angriffsaufbau"],
+    "players_min": 19,
+    "players_max": 20,
+    "duration_min": 20,
+    "duration_max": 30,
+    "intensity": 4,
+    "field_width_m": 65,
+    "field_length_m": 70,
+    "material": [
+      { "item": "huetchen", "count": 12 },
+      { "item": "baelle", "count": 10 },
+      { "item": "leibchen", "count": 8 },
+      { "item": "grosstor", "count": 1 },
+      { "item": "minitore", "count": 3 }
+    ],
+    "description": "Die komplette Startelf baut gegen einen Achterblock auf, der im Mittelfeldpressing steht. Punktet mit Toren auf das Großtor. Der Block punktet mit Ballgewinn und Tor auf drei Minitore.",
+    "procedure": "Etwas mehr als ein Halbfeld. Team A in der Grundformation mit Torwart, baut vom eigenen Tor aus auf. Team B mit acht Spielern (zwei Stürmer, vier Mittelfeld, zwei Sechser oder je nach Gegnerformation) presst ab der Mittellinie. Team A punktet mit einem Tor auf das Großtor am gegenüberliegenden Ende oder mit zehn Pässen in der gegnerischen Hälfte. Team B punktet mit Ballgewinn und Tor auf eines von drei Minitoren an der Grundlinie von A innerhalb von 10 Sekunden. Nach 5 Minuten wechselt der Gegnerblock die Formation.",
+    "coaching_points": [
+      "Geduld in der eigenen Hälfte, der Block wird erst durch Seitenwechsel offen",
+      "Innenverteidiger andribbeln bis der erste Pressende reagiert",
+      "Sechser zeigen sich zwischen Stürmer und Mittelfeldlinie, Achter im Halbraum dahinter",
+      "Außenverteidiger hoch, damit die Außenspieler des Blocks gebunden werden",
+      "Bei Ballverlust: sofort Gegenpressing, das Team steht hoch"
+    ],
+    "variations": {
+      "easier": ["Block mit sieben Spielern", "Block startet erst bei Pass über die Mittellinie"],
+      "harder": ["Block mit neun Spielern", "Zwei Kontakte in der eigenen Hälfte", "Team A hat 25 Sekunden pro Angriff"]
+    },
+    "tags": ["spielform_gross", "spielaufbau", "positionsspiel", "ueberzahl", "torwart", "grosstor"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "torwart-im-aufbau-4v4-plus-tw",
+    "name": "Torwart im Aufbau: 4 gegen 4 plus Torhüter",
+    "goal_primary": "spielaufbau",
+    "goals_secondary": ["pressingresistenz", "technik"],
+    "players_min": 10,
+    "players_max": 10,
+    "duration_min": 12,
+    "duration_max": 18,
+    "intensity": 4,
+    "field_width_m": 30,
+    "field_length_m": 35,
+    "material": [
+      { "item": "huetchen", "count": 4 },
+      { "item": "baelle", "count": 6 },
+      { "item": "leibchen", "count": 8 },
+      { "item": "grosstor", "count": 2 }
+    ],
+    "description": "Ballbesitzspiel, in dem beide Torhüter als Anspielstationen mitspielen. Der Torwart wird zum elften Feldspieler im Aufbau.",
+    "procedure": "Feld 30 x 35 m mit zwei Großtoren, je ein Torwart. Vier gegen vier. Punkt: acht Pässe in Folge, davon mindestens einer über den eigenen Torwart. Der Torwart darf den Ball nur mit dem Fuß spielen und hat maximal zwei Kontakte. Tore sind erlaubt und zählen doppelt, wenn der Angriff über den Torwart aufgebaut wurde.",
+    "coaching_points": [
+      "Torwart positioniert sich außerhalb des Tores auf Strafraumhöhe, bereit für den Rückpass",
+      "Feldspieler machen das Feld breit, sobald der Torwart den Ball hat",
+      "Torwart: erste Annahme in die freie Seite, nicht in den Druck",
+      "Pressing gegen den Torwart: Pass zurück ins Spiel zustellen, nicht blind anlaufen"
+    ],
+    "variations": {
+      "easier": ["Torwart mit drei Kontakten", "Sechs Pässe"],
+      "harder": ["Torwart mit einem Kontakt", "Der Pass über den Torwart muss die Seite wechseln", "Fünf gegen fünf"]
+    },
+    "tags": ["spielform_klein", "spielaufbau", "torwart", "pressingresistenz", "gleichzahl", "grosstor"],
+    "animation": null,
+    "source": "seed"
+  },
+  {
+    "slug": "pressing-jagdform-3v3-plus-3",
+    "name": "Jagdform 3 gegen 3 plus 3 mit Abschluss",
+    "goal_primary": "pressing",
+    "goals_secondary": ["umschalten_offensiv", "ausdauer"],
+    "players_min": 9,
+    "players_max": 12,
+    "duration_min": 12,
+    "duration_max": 16,
+    "intensity": 5,
+    "field_width_m": 25,
+    "field_length_m": 30,
+    "material": [
+      { "item": "huetchen", "count": 4 },
+      { "item": "baelle", "count": 8 },
+      { "item": "leibchen", "count": 9 },
+      { "item": "minitore", "count": 2 }
+    ],
+    "description": "Drei Teams zu dritt. Ein Team hält den Ball mit Hilfe des zweiten Teams, das dritte jagt. Wer den Ball erobert, schließt sofort auf ein Minitor ab. Intensive Pressingform mit klarer Belohnung.",
+    "procedure": "Feld 25 x 30 m mit zwei Minitoren an einer Stirnseite. Team A und B halten gemeinsam den Ball (6 gegen 3), Team C jagt. Erobert C den Ball, darf es innerhalb von 6 Sekunden auf eines der Minitore abschließen. Das Team, das den Ball verloren hat, wird das neue Jagdteam. Jeder Ballgewinn ein Punkt, jedes Tor drei Punkte. Rotation nach je 2 Minuten, damit jedes Team jagt.",
+    "coaching_points": [
+      "Zu dritt jagen: Dreieck halten, der erste presst, die anderen zwei nehmen die Passwege",
+      "Ballgewinn sofort in Zug zum Tor umsetzen, nicht sichern",
+      "Ballbesitzer: nach Ballverlust sofort gegenpressen, um den Abschluss zu verhindern"
+    ],
+    "variations": {
+      "easier": ["Größeres Feld", "Zehn Sekunden für den Abschluss"],
+      "harder": ["Zwei Kontakte für Ballbesitzer", "Vier Minitore, zwei an jeder Stirnseite", "Nur ein Kontakt zum Abschluss"]
+    },
+    "tags": ["spielform_klein", "pressing", "umschalten_offensiv", "wettkampf", "ausdauer", "minitore", "unterzahl"],
+    "animation": null,
+    "source": "seed"
+  }
+]
