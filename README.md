@@ -18,6 +18,7 @@ Editor-Views (noch nicht kompiliert, siehe `PlayLenseCore/README.md`).
 | [docs/04-regelwerk-und-generator.md](docs/04-regelwerk-und-generator.md) | Kennzahlen, Problemerkennung als Regelwerk, Trainingsgenerator |
 | [docs/05-animationsformat.md](docs/05-animationsformat.md) | Keyframe-Format für 2D-Übungsanimationen, Editor und Playback |
 | [docs/06-uebungen-erfassen.md](docs/06-uebungen-erfassen.md) | Übungen anlegen: Dateien, Werkzeug, Editor in der App, Schreibregeln |
+| [docs/07-installieren.md](docs/07-installieren.md) | Xcode-Projekt erzeugen, auf dem iPad installieren, Tests, CI |
 | [docs/00-brainstorm-chatgpt.md](docs/00-brainstorm-chatgpt.md) | Ursprüngliches Brainstorming (Referenz, nicht verbindlich) |
 
 ## Verzeichnisse
@@ -28,7 +29,8 @@ Editor-Views (noch nicht kompiliert, siehe `PlayLenseCore/README.md`).
 | `content/goals.json`, `tags.json`, `material.json` | Vokabular für Ziele, Tags und Material |
 | `content/exercises.seed.json` | Gebündelte Übungen mit IDs für die App (generiert) |
 | `tools/exercises.py` | `validate`, `list`, `stats`, `new <slug>`, `bundle` |
-| `PlayLenseCore/` | Swift-Package: Modelle, Validator, Bibliothek, Animations-Player, Editor |
+| `PlayLenseCore/` | Swift-Package: Domäne, Match-Engine, SQLite-Datenbank (GRDB), Export, alle SwiftUI-Screens |
+| `App/`, `Tests/`, `project.yml` | App-Target und Tests; Xcode-Projekt wird mit `make project` (XcodeGen) erzeugt |
 
 ```bash
 python3 tools/exercises.py validate   # alle Übungen prüfen

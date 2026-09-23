@@ -33,8 +33,7 @@ public struct ExerciseEditorView: View {
                 Section("Grunddaten") {
                     TextField("Name", text: $draft.name)
                     TextField("Slug (z. B. rondo-5v2)", text: $draft.slug)
-                        .autocorrectionDisabled()
-                        .textInputAutocapitalization(.never)
+                        .plainTextInput()
                         .onChange(of: draft.name) { _, new in
                             if library.isSeed(draft.id) == false, draft.slug.isEmpty || draft.slug == Self.slugify(oldName) {
                                 draft.slug = Self.slugify(new)
@@ -133,7 +132,7 @@ public struct ExerciseEditorView: View {
                     TextEditor(text: $animationJSON)
                         .font(.system(.footnote, design: .monospaced))
                         .frame(minHeight: 120)
-                        .autocorrectionDisabled()
+                        .plainTextInput()
                         .onChange(of: animationJSON) { _, new in applyAnimationJSON(new) }
                     if let e = animationError {
                         Label(e, systemImage: "exclamationmark.triangle").foregroundStyle(.red).font(.caption)

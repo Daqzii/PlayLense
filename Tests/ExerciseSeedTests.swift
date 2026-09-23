@@ -1,5 +1,5 @@
 import XCTest
-@testable import PlayLenseCore
+import PlayLenseCore
 
 final class ExerciseSeedTests: XCTestCase {
     func testSeedBundleLoadsAndValidates() throws {

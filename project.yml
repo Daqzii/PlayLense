@@ -1,0 +1,82 @@
+name: PlayLense
+options:
+  bundleIdPrefix: com.daqzii
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "16.0"
+  createIntermediateGroups: true
+packages:
+  PlayLenseCore:
+    path: PlayLenseCore
+targets:
+  PlayLense:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - App
+    dependencies:
+      - package: PlayLenseCore
+        product: PlayLenseCore
+      - package: PlayLenseCore
+        product: PlayLenseData
+      - package: PlayLenseCore
+        product: PlayLenseUI
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: PlayLense
+        CFBundleShortVersionString: "0.1.0"
+        CFBundleVersion: "1"
+        UILaunchScreen: {}
+        UIRequiresFullScreen: true
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        ITSAppUsesNonExemptEncryption: false
+        LSSupportsOpeningDocumentsInPlace: true
+        UIFileSharingEnabled: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.daqzii.playlense
+        TARGETED_DEVICE_FAMILY: "2"
+        SWIFT_VERSION: "5.9"
+        CODE_SIGN_STYLE: Automatic
+        MARKETING_VERSION: "0.1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        ENABLE_USER_SCRIPT_SANDBOXING: NO
+  PlayLenseTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - Tests
+    dependencies:
+      - target: PlayLense
+      - package: PlayLenseCore
+        product: PlayLenseCore
+      - package: PlayLenseCore
+        product: PlayLenseData
+      - package: PlayLenseCore
+        product: PlayLenseUI
+    settings:
+      base:
+        SWIFT_VERSION: "5.9"
+        CODE_SIGN_STYLE: Automatic
+schemes:
+  PlayLense:
+    build:
+      targets:
+        PlayLense: all
+        PlayLenseTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - PlayLenseTests
