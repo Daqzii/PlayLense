@@ -3,15 +3,16 @@ import Foundation
 /// Wer steht gerade auf dem Platz? Berechnet aus Aufstellung, Wechseln und Platzverweisen.
 /// Rückwechsel sind erlaubt: ein ausgewechselter Spieler kann später wieder eingewechselt werden.
 public struct PitchState: Hashable, Sendable {
-    public var onPitch: [UUID: Position?] = [:]
+    public var onPitch: Set<UUID> = []
+    public var positions: [UUID: Position] = [:]
     public var bench: Set<UUID> = []
     public var sentOff: Set<UUID> = []
     public var injured: Set<UUID> = []
 
-    public var onPitchIDs: [UUID] { Array(onPitch.keys) }
+    public var onPitchIDs: [UUID] { Array(onPitch) }
 
     public func position(of playerId: UUID) -> Position? {
-        onPitch[playerId] ?? nil
+        positions[playerId]
     }
 }
 
@@ -20,7 +21,8 @@ public enum LineupEngine {
         var s = PitchState()
         for l in lineup {
             if l.role == .start {
-                s.onPitch[l.playerId] = l.positionKey
+                s.onPitch.insert(l.playerId)
+                if let p = l.positionKey { s.positions[l.playerId] = p }
             } else {
                 s.bench.insert(l.playerId)
             }
@@ -32,21 +34,22 @@ public enum LineupEngine {
         for e in relevant {
             switch e.type {
             case .wechsel:
+                var inherited: Position? = nil
                 if let out = e.playerId {
-                    let pos = s.onPitch[out] ?? nil
-                    s.onPitch.removeValue(forKey: out)
+                    inherited = s.positions[out]
+                    s.onPitch.remove(out)
+                    s.positions.removeValue(forKey: out)
                     s.bench.insert(out)
-                    if let inn = e.playerId2 {
-                        s.bench.remove(inn)
-                        s.onPitch[inn] = e.positionKey ?? pos
-                    }
-                } else if let inn = e.playerId2 {
+                }
+                if let inn = e.playerId2 {
                     s.bench.remove(inn)
-                    s.onPitch[inn] = e.positionKey
+                    s.onPitch.insert(inn)
+                    if let p = e.positionKey ?? inherited { s.positions[inn] = p }
                 }
             case .karte:
                 if let p = e.playerId, e.cardType?.removesPlayer == true {
-                    s.onPitch.removeValue(forKey: p)
+                    s.onPitch.remove(p)
+                    s.positions.removeValue(forKey: p)
                     s.bench.remove(p)
                     s.sentOff.insert(p)
                 }

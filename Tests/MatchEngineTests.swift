@@ -74,7 +74,8 @@ final class MatchEngineTests: XCTestCase {
         events.append(event(.karte, period: 2, second: 900, player: b, subtype: CardType.rot.rawValue, seq: 3))
         s = LineupEngine.state(lineup: lineup, events: events)
         XCTAssertTrue(s.sentOff.contains(b))
-        XCTAssertNil(s.onPitch[b] ?? nil)
+        XCTAssertFalse(s.onPitch.contains(b))
+        XCTAssertNil(s.position(of: b))
 
         let kickoff = Date(timeIntervalSince1970: 1_000_000)
         let periods = [
