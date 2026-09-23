@@ -50,7 +50,7 @@ public final class AppDatabase: Sendable {
         var m = DatabaseMigrator()
         m.registerMigration("v1_stammdaten_und_spiel") { db in
             try db.create(table: "team") { t in
-                t.primaryKey("id", .blob)
+                t.column("id", .blob).primaryKey()
                 t.column("name", .text).notNull()
                 t.column("shortName", .text).notNull()
                 t.column("colorHex", .text).notNull()
@@ -59,7 +59,7 @@ public final class AppDatabase: Sendable {
                 t.column("updatedAt", .datetime).notNull()
             }
             try db.create(table: "season") { t in
-                t.primaryKey("id", .blob)
+                t.column("id", .blob).primaryKey()
                 t.column("teamId", .blob).notNull().references("team", onDelete: .cascade)
                 t.column("label", .text).notNull()
                 t.column("startsOn", .datetime)
@@ -69,7 +69,7 @@ public final class AppDatabase: Sendable {
                 t.column("updatedAt", .datetime).notNull()
             }
             try db.create(table: "player") { t in
-                t.primaryKey("id", .blob)
+                t.column("id", .blob).primaryKey()
                 t.column("teamId", .blob).notNull().references("team", onDelete: .cascade)
                 t.column("firstName", .text).notNull()
                 t.column("lastName", .text).notNull()
@@ -85,7 +85,7 @@ public final class AppDatabase: Sendable {
                 t.column("updatedAt", .datetime).notNull()
             }
             try db.create(table: "match") { t in
-                t.primaryKey("id", .blob)
+                t.column("id", .blob).primaryKey()
                 t.column("seasonId", .blob).notNull().references("season", onDelete: .cascade)
                 t.column("kickoffPlanned", .datetime).notNull()
                 t.column("opponentName", .text).notNull()
@@ -101,7 +101,7 @@ public final class AppDatabase: Sendable {
                 t.column("updatedAt", .datetime).notNull()
             }
             try db.create(table: "matchPeriod") { t in
-                t.primaryKey("id", .blob)
+                t.column("id", .blob).primaryKey()
                 t.column("matchId", .blob).notNull().references("match", onDelete: .cascade).indexed()
                 t.column("number", .integer).notNull()
                 t.column("startedAt", .datetime)
@@ -109,7 +109,7 @@ public final class AppDatabase: Sendable {
                 t.column("nominalSeconds", .integer).notNull().defaults(to: 2700)
             }
             try db.create(table: "matchLineup") { t in
-                t.primaryKey("id", .blob)
+                t.column("id", .blob).primaryKey()
                 t.column("matchId", .blob).notNull().references("match", onDelete: .cascade).indexed()
                 t.column("playerId", .blob).notNull().references("player", onDelete: .cascade)
                 t.column("role", .text).notNull()
@@ -117,7 +117,7 @@ public final class AppDatabase: Sendable {
                 t.column("numberInMatch", .integer)
             }
             try db.create(table: "matchEvent") { t in
-                t.primaryKey("id", .blob)
+                t.column("id", .blob).primaryKey()
                 t.column("matchId", .blob).notNull().references("match", onDelete: .cascade)
                 t.column("seq", .integer).notNull()
                 t.column("period", .integer).notNull()
@@ -142,7 +142,7 @@ public final class AppDatabase: Sendable {
             }
             try db.create(index: "idx_matchEvent_match_seq", on: "matchEvent", columns: ["matchId", "seq"])
             try db.create(table: "matchInsight") { t in
-                t.primaryKey("id", .blob)
+                t.column("id", .blob).primaryKey()
                 t.column("matchId", .blob).notNull().references("match", onDelete: .cascade).indexed()
                 t.column("period", .integer).notNull()
                 t.column("matchSecond", .integer).notNull()
@@ -152,14 +152,14 @@ public final class AppDatabase: Sendable {
                 t.column("acknowledged", .boolean).notNull().defaults(to: false)
             }
             try db.create(table: "matchReport") { t in
-                t.primaryKey("id", .blob)
+                t.column("id", .blob).primaryKey()
                 t.column("matchId", .blob).notNull().references("match", onDelete: .cascade).indexed()
                 t.column("kind", .text).notNull()
                 t.column("generatedAt", .datetime).notNull()
                 t.column("payloadJSON", .text).notNull()
             }
             try db.create(table: "appMeta") { t in
-                t.primaryKey("key", .text)
+                t.column("key", .text).primaryKey()
                 t.column("value", .text).notNull()
             }
         }
