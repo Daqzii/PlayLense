@@ -1,48 +1,18 @@
 # PlayLenseCore
 
-Swift-Package mit den ersten Bausteinen der App:
+Swift-Package mit der gesamten Logik und Oberfläche der App. Das App-Target in `App/` ist nur die
+dünne Hülle darum.
 
 | Target | Inhalt |
 |---|---|
-| `PlayLenseCore` | `Exercise`-Modell, `ExerciseAnimation` (Keyframe-Format mit Interpolation), `ExerciseValidator`, `ExerciseLibrary` (Seed + Nutzerdatei, Suche, Speichern, Import/Export), Seed-Bundle als Ressource |
-| `PlayLenseUI` | `ExerciseLibraryView` (Liste, Suche, Filter, Detail), `ExerciseEditorView` (Formular zum Anlegen und Bearbeiten eigener Übungen) |
-| `PlayLenseCoreTests` | Seed lädt und ist valide, ID-Ableitung stimmt mit dem Python-Werkzeug überein, Round-Trip, Interpolation, Speichern/Löschen |
+| `PlayLenseCore` | Domäne (Team, Saison, Spieler, Spiel, Events, Flags), Match-Engine (Uhr, Aufstellung mit Rückwechseln, Statistik je Zeitfenster, Berichte, Live-Hinweise, Spielfeld-Geometrie), Übungsmodell, Animationsformat, Validator, Übungsbibliothek, Seed-Bundle |
+| `PlayLenseData` | SQLite über GRDB: Migrationen, Repositories, Event-Log, Export/Import als `.playlense`-ZIP |
+| `PlayLenseUI` | SwiftUI: Root-Navigation, Kader, Spiele und Aufstellung, Match Center, Berichte (Text/PDF), Statistik, Übungsbibliothek und Editor, Einstellungen |
 
-**Status: geschrieben, aber noch nicht kompiliert.** In der Umgebung, in der dieser Code entstand,
-gab es keinen Swift-Compiler. Erster Schritt am Mac:
-
-```bash
-cd PlayLenseCore
-swift build
-swift test
-```
-
-Erwartbare Nacharbeiten beim ersten Build: kleine Typ- oder Import-Fehler, nichts Strukturelles.
-
-## Einbinden in die App
-
-In Xcode: File → Add Package Dependencies → „Add Local…“ → Ordner `PlayLenseCore` wählen. Dann in
-der App:
-
-```swift
-import SwiftUI
-import PlayLenseCore
-import PlayLenseUI
-
-@main
-struct PlayLenseApp: App {
-    @State private var library = try! ExerciseLibrary.live()
-
-    var body: some Scene {
-        WindowGroup {
-            ExerciseLibraryView(library: library)
-        }
-    }
-}
-```
+**Status:** baut und testet auf GitHub Actions (macOS-Runner, iPad-Simulator, Xcode 16.4).
+Tests liegen in `../Tests` und laufen über das Xcode-Projekt (`make test` oder ⌘U).
 
 ## Seed aktualisieren
 
-Die Datei `Sources/PlayLenseCore/Resources/exercises.seed.json` wird von
-`python3 tools/exercises.py bundle` geschrieben. Nicht von Hand ändern, sondern die Quellen in
-`content/exercises/` bearbeiten und neu bündeln.
+`Sources/PlayLenseCore/Resources/exercises.seed.json` wird von `python3 tools/exercises.py bundle`
+geschrieben. Nicht von Hand ändern, sondern `content/exercises/` bearbeiten und neu bündeln.

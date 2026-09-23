@@ -4,9 +4,10 @@ Offline-Coach- und Analyst-App für das iPad. Gebaut für den Einsatz als Co-Tra
 im Amateurfußball (Bayern, A-Klasse), wo Videoaufzeichnungen nicht erlaubt sind und ein
 einzelner Beobachter am Spielfeldrand Statistiken erfassen muss.
 
-**Status:** Planung abgeschlossen, erste Bausteine vorhanden: 60 Übungen als Seed-Daten, ein
-Prüf- und Bündel-Werkzeug sowie ein Swift-Package mit Übungsmodell, Validator, Bibliothek und
-Editor-Views (noch nicht kompiliert, siehe `PlayLenseCore/README.md`).
+**Status:** Ausbaustufen 0 und 1 sind gebaut und auf GitHub Actions grün: Kader, Spiele mit
+Aufstellung, Match Center mit Live-Erfassung, Halbzeit- und Spielbericht, Statistik je Zeitfenster,
+Backup-Export/Import, 60 Übungen mit Bibliothek und Editor. Nächste Stufen: Analyse-Vertiefung,
+Training, Generator, Taktikboard, Dashboard. Installation siehe `docs/07-installieren.md`.
 
 ## Dokumente
 
