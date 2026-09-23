@@ -19,6 +19,7 @@ Editor-Views (noch nicht kompiliert, siehe `PlayLenseCore/README.md`).
 | [docs/05-animationsformat.md](docs/05-animationsformat.md) | Keyframe-Format für 2D-Übungsanimationen, Editor und Playback |
 | [docs/06-uebungen-erfassen.md](docs/06-uebungen-erfassen.md) | Übungen anlegen: Dateien, Werkzeug, Editor in der App, Schreibregeln |
 | [docs/07-installieren.md](docs/07-installieren.md) | Xcode-Projekt erzeugen, auf dem iPad installieren, Tests, CI |
+| [docs/08-bedienung.md](docs/08-bedienung.md) | Bedienung: Vorbereitung, Erfassung im Spiel, Korrekturen, Berichte |
 | [docs/00-brainstorm-chatgpt.md](docs/00-brainstorm-chatgpt.md) | Ursprüngliches Brainstorming (Referenz, nicht verbindlich) |
 
 ## Verzeichnisse
