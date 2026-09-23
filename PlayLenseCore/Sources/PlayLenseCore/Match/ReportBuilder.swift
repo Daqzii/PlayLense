@@ -27,11 +27,22 @@ public struct ReportLine: Codable, Hashable, Sendable {
     public var label: String
     public var wir: Int
     public var gegner: Int
+
+    public init(label: String, wir: Int, gegner: Int) {
+        self.label = label
+        self.wir = wir
+        self.gegner = gegner
+    }
 }
 
 public struct ReportNote: Codable, Hashable, Sendable {
     public var minute: String
     public var text: String
+
+    public init(minute: String, text: String) {
+        self.minute = minute
+        self.text = text
+    }
 }
 
 public struct MatchReportPayload: Codable, Sendable {
@@ -49,6 +60,25 @@ public struct MatchReportPayload: Codable, Sendable {
     public var flags: [ReportNote]
     public var notes: [ReportNote]
     public var insights: [ReportNote]
+
+    public init(kind: ReportKind, generatedAt: Date, teamName: String, opponentName: String, score: SideCounts,
+                findings: [ReportFinding], lines: [ReportLine], attackSharesWir: [String: Int], attackSharesGegner: [String: Int],
+                ballLossHeatmap: [String: Int], ballWinHeatmap: [String: Int], flags: [ReportNote], notes: [ReportNote], insights: [ReportNote]) {
+        self.kind = kind
+        self.generatedAt = generatedAt
+        self.teamName = teamName
+        self.opponentName = opponentName
+        self.score = score
+        self.findings = findings
+        self.lines = lines
+        self.attackSharesWir = attackSharesWir
+        self.attackSharesGegner = attackSharesGegner
+        self.ballLossHeatmap = ballLossHeatmap
+        self.ballWinHeatmap = ballWinHeatmap
+        self.flags = flags
+        self.notes = notes
+        self.insights = insights
+    }
 
     /// Klartext zum Vorlesen, Kopieren oder Abtippen.
     public func plainText() -> String {

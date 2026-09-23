@@ -27,7 +27,7 @@ public final class MatchSession: Identifiable {
     public static let pendingTimeout: TimeInterval = 4
     public static let bannerDuration: TimeInterval = 8
 
-    public var id: UUID { match.id }
+    public nonisolated let id: UUID
 
     public struct PendingEvent: Hashable, Sendable {
         public var type: EventType
@@ -48,6 +48,7 @@ public final class MatchSession: Identifiable {
     public init(db: AppDatabase, matchId: UUID, teamName: String) throws {
         self.db = db
         self.teamName = teamName
+        self.id = matchId
         let b = try db.fetchMatchBundle(id: matchId)
         self.match = b.match
         self.periods = b.periods

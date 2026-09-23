@@ -1,5 +1,6 @@
 import SwiftUI
 import PlayLenseCore
+import PlayLenseData
 
 enum MatchSheet: Identifiable {
     case flags, note, substitution, stats, trash
